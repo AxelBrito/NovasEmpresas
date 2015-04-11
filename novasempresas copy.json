@@ -1,0 +1,810 @@
+[{"nif":"509200036",
+    "name":"Brotar Elencos Agricultura e Pecuária Lda.",
+    "morada":"Quinta do Passil, Rego da Amoreira S/N",
+    "freguesia":"Alcochete",
+    "codPostal":"2890-168 ALCOCHETE",
+    "distrito":"Setúbal",
+    "concelho":"Alcochete"
+  },
+  {
+    "nif":"510240976",
+    "name":"Exclusivmagnólia Unipessoal Lda.",
+    "morada":"R. do Comércio, Nº 33, R/C",
+    "freguesia":"Portimão",
+    "codPostal":"8500-633 PORTIMÃO",
+    "distrito":"Faro",
+    "concelho":"Portimão"
+  },
+  {
+    "nif":"510284949",
+    "name":"Difundemagia - Unipessoal Lda.",
+    "morada":"Estr. Nacional 11-1, 123 R/C Esq.",
+    "freguesia":"Baixa da Banheira",
+    "codPostal":"2835-173 BAIXA DA BANHEIRA",
+    "distrito":"Setúbal",
+    "concelho":"Moita"
+  },
+  {
+    "nif":"510321909",
+    "name":"Melodialunar - Unipessoal Lda.",
+    "morada":"Urb. Quinta do Bravo, Lt. 58, 2º Esq., Paredes, Alenquer",
+    "freguesia":"Alenquer",
+    "codPostal":"2580-578 ALENQUER",
+    "distrito":"Lisboa",
+    "concelho":"Alenquer"
+  },
+  {
+    "nif":"510368786",
+    "name":"Armasteel - Armaduras para Betão, Unipessoal Lda.",
+    "morada":"R. Pedro Nunes, Lt. 37, Zona Industrial, Santo Onofre -",
+    "freguesia":"Caldas da Rainha",
+    "codPostal":"2500-303 CALDAS DA RAINHA",
+    "distrito":"Leiria",
+    "concelho":"Caldas da Rainha"
+  },
+  {
+    "nif":"510372465",
+    "name":"Radicalcélula - Saúde, Lda.",
+    "morada":"R. de S. José, Nº 3, 2º A",
+    "freguesia":"Torres Novas",
+    "codPostal":"2350-523 TORRES NOVAS",
+    "distrito":"Santarém",
+    "concelho":"Torres Novas"
+  },
+  {
+    "nif":"510375820",
+    "name":"Virtudenata - Unipessoal Lda.",
+    "morada":"R. Outeiro de Mouros, Nº 558",
+    "freguesia":"Vila Boa de Quires",
+    "codPostal":"4635-674 VILA BOA DE QUIRES",
+    "distrito":"Porto",
+    "concelho":"Marco de Canaveses"
+  },
+  {
+    "nif":"510380581",
+    "name":"S2z - Comércio Internacional, Unipessoal Lda.",
+    "morada":"R. Marquês de Pombal, Nº 100, 1º Esq., Cantanhede",
+    "freguesia":"Cantanhede",
+    "codPostal":"3060-185 CANTANHEDE",
+    "distrito":"Coimbra",
+    "concelho":"Cantanhede"
+  },
+  {
+    "nif":"510390030",
+    "name":"Sociedade Agrícola Sousa & Gregório, Lda.",
+    "morada":"R. Conde Valença, N.º 58, Casa Branca",
+    "freguesia":"Casa Branca",
+    "codPostal":"7470-120 CASA BRANCA",
+    "distrito":"Portalegre",
+    "concelho":"Sousel"
+  },
+  {
+    "nif":"510404766",
+    "name":"Canelicetim - Unipessoal Lda.",
+    "morada":"R. da Igreja, S/N",
+    "freguesia":"Moure",
+    "codPostal":"4610-480 MOURE, FELGUEIRAS",
+    "distrito":"Porto",
+    "concelho":"Felgueiras"
+  },
+  {
+    "nif":"510413692",
+    "name":"Dourocister - Empreendimentos Turísticos, Lda.",
+    "morada":"Quinta da Abadia Velha",
+    "freguesia":"Ucanha",
+    "codPostal":"3610-175 TAROUCA",
+    "distrito":"Viseu",
+    "concelho":"Tarouca"
+  },
+  {
+    "nif":"510415245",
+    "name":"Zembe (Portimão) - Sociedade Técnica e Comercial, Lda.",
+    "morada":"R. de Moçambique, Lt. 9",
+    "freguesia":"Portimão",
+    "codPostal":"8500-608 PORTIMÃO",
+    "distrito":"Faro",
+    "concelho":"Portimão"
+  },
+  {
+    "nif":"510419801",
+    "name":"Obrajusta - Gestão de Obra, Lda.",
+    "morada":"Av. Varandas do Tua, Lj. 2, Lt. 1a, 1º",
+    "freguesia":"Mirandela",
+    "codPostal":"5370-212 MIRANDELA",
+    "distrito":"Bragança",
+    "concelho":"Mirandela"
+  },
+  {
+    "nif":"510426450",
+    "name":"Fundus Vitis - Companhia Agrícola, Lda.",
+    "morada":"Quinta da Bichinha II, Vila Chã, Ventosa,",
+    "freguesia":"Vila Chã",
+    "codPostal":"2580-413 VENTOSA",
+    "distrito":"Lisboa",
+    "concelho":"Alenquer"
+  },
+  {
+    "nif":"510427456",
+    "name":"Prismanotável Construções Lda.",
+    "morada":"Zona Indutrial de Oliveira de Frades, Lt. 14, S/N,",
+    "freguesia":"Vilarinho",
+    "codPostal":"3680-323 SOUTO DE LAFÕES-OLIVEIRA DE FRADES",
+    "distrito":"Viseu",
+    "concelho":"Oliveira de Frades"
+  },
+  {
+    "nif":"510431976",
+    "name":"Fantasycode - Lda.",
+    "morada":"R. S. Mateus, Nº237",
+    "freguesia":"Carvalhinho",
+    "codPostal":"4820-498 MEDELO-FAFE",
+    "distrito":"Braga",
+    "concelho":"Fafe"
+  },
+  {
+    "nif":"510436196",
+    "name":"Fantastikdreams - Lda.",
+    "morada":"R. da Gandara, Nº 21",
+    "freguesia":"Pampilhosa",
+    "codPostal":"3050-459 PAMPILHOSA",
+    "distrito":"Aveiro",
+    "concelho":"Mealhada"
+  },
+  {
+    "nif":"510437818",
+    "name":"Imparávelrigor - Unipessoal Lda.",
+    "morada":"R. de Santa Marta, S/N",
+    "freguesia":"Caramos",
+    "codPostal":"4615-380 CARAMOS (FELGUEIRAS)",
+    "distrito":"Porto",
+    "concelho":"Felgueiras"
+  },
+  {
+    "nif":"510438440",
+    "name":"Meridi - Rent, Transportes de Viaturas, Unipessoal Lda.",
+    "morada":"Zona Industrial de Torres Novas - Pav. B, Lt. 11",
+    "freguesia":"Cerrada Grande",
+    "codPostal":"2350-483 TORRES NOVAS",
+    "distrito":"Santarém",
+    "concelho":"Torres Novas"
+  },
+  {
+    "nif":"510439063",
+    "name":"Hugo Silva Serviços Veterinários, Unipessoal Lda.",
+    "morada":"R. das Terçarias, N.º 17, 2.º F",
+    "freguesia":"Moura",
+    "codPostal":"7860-035 MOURA",
+    "distrito":"Beja",
+    "concelho":"Moura"
+  },
+  {
+    "nif":"510439268",
+    "name":"Esferamagenta - Gestão de Resíduos Unipessoal Lda.",
+    "morada":"Az. de Santo Isidro, Cci 1715, Barra Cheia, Alhos Vedros",
+    "freguesia":"Barra Cheia",
+    "codPostal":"2860-207 ALHOS VEDROS",
+    "distrito":"Setúbal",
+    "concelho":"Moita"
+  },
+  {
+    "nif":"510442846",
+    "name":"Astir - Desporto e Saúde, Lda.",
+    "morada":"R. 1º de Maio, Nº 29",
+    "freguesia":"Vila",
+    "codPostal":"4960-518 MELGAÇO",
+    "distrito":"Viana do Castelo",
+    "concelho":"Melgaço"
+  },
+  {
+    "nif":"510443249",
+    "name":"Ensaiassunto - Consultoria e Gestão Social Lda.",
+    "morada":"R. Joaquim Fernandes Póvoa, Nº 19, Pena",
+    "freguesia":"Pena",
+    "codPostal":"3060-521 PORTUNHOS",
+    "distrito":"Coimbra",
+    "concelho":"Cantanhede"
+  },
+  {
+    "nif":"510444601",
+    "name":"Saber Oportuno - Consultoria e Formação Unipessoal Lda.",
+    "morada":"Estr. da Nazaré, Nº 39, Moita",
+    "freguesia":"Moita",
+    "codPostal":"2445-573 MARINHA GRANDE",
+    "distrito":"Leiria",
+    "concelho":"Marinha Grande"
+  },
+  {
+    "nif":"510444695",
+    "name":"Nova Era Shoes, Sociedade Unipessoal Lda.",
+    "morada":"R. da Mata 276 C/V",
+    "freguesia":"São Vicente de Pereira Jusã",
+    "codPostal":"3880-872 S. VICENTE DE PEREIRA JUSÃ",
+    "distrito":"Aveiro",
+    "concelho":"Ovar"
+  },
+  {
+    "nif":"510444709",
+    "name":"Verderequinte Lda.",
+    "morada":"R. dos Encontros, Nº 22, Casal da Areia",
+    "freguesia":"Casal da Areia",
+    "codPostal":"3090-839 FERREIRA-A-NOVA",
+    "distrito":"Coimbra",
+    "concelho":"Figueira da Foz"
+  },
+  {
+    "nif":"510446493",
+    "name":"Olealcoutim, Olivais de Alcoutim, Lda.",
+    "morada":"Lugar Zambujal, S/N",
+    "freguesia":"Zambujal",
+    "codPostal":"8970-392 VAQUEIROS",
+    "distrito":"Faro",
+    "concelho":"Alcoutim"
+  },
+  {
+    "nif":"510446779",
+    "name":"Matrizrolante - Lda.",
+    "morada":"Lg. Padre Joaquim Pereira dos Santos, 402, 1º B",
+    "freguesia":"Guifões",
+    "codPostal":"4460-033 GUIFÕES",
+    "distrito":"Porto",
+    "concelho":"Matosinhos"
+  },
+  {
+    "nif":"510446884",
+    "name":"Autovânia - Com. Auto, Unipessoal Lda.",
+    "morada":"R. João Vasques de Almeida, Nº 1, Alto do Estanqueiro",
+    "freguesia":"Alto do Estanqueiro",
+    "codPostal":"2870-660 ALTO DO ESTANQUEIRO",
+    "distrito":"Setúbal",
+    "concelho":"Montijo"
+  },
+  {
+    "nif":"510446973",
+    "name":"Villa Idaliseixas, Lda.",
+    "morada":"Lg. de S. Bento, S/Nº",
+    "freguesia":"Seixas",
+    "codPostal":"4910-344 SEIXAS CMN",
+    "distrito":"Viana do Castelo",
+    "concelho":"Caminha"
+  },
+  {
+    "nif":"510447082",
+    "name":"Maristate, S.A.",
+    "morada":"Tv. de Larin, Nº 2",
+    "freguesia":"Soutelo",
+    "codPostal":"4730-581 SOUTELO VVD",
+    "distrito":"Braga",
+    "concelho":"Vila Verde"
+  },
+  {
+    "nif":"510447317",
+    "name":"Atlantiparalelo Unipessoal Lda.",
+    "morada":"Av. dos Combatentes da Grande Guerra, Nº 6, 2º E",
+    "freguesia":"Setúbal",
+    "codPostal":"2900-328 SETUBAL",
+    "distrito":"Setúbal",
+    "concelho":"Setúbal"
+  },
+  {
+    "nif":"510448208",
+    "name":"Egsp - Sociedade Gestora de Participações Sociais, Lda.",
+    "morada":"Lg. do Casal Vistoso, Nº2, Letra D, 1º, Porta E",
+    "freguesia":"Lisboa",
+    "codPostal":"1900-142 LISBOA",
+    "distrito":"Lisboa",
+    "concelho":"Lisboa"
+  },
+  {
+    "nif":"510448410",
+    "name":"Pearlcode - Unipessoal Lda.",
+    "morada":"R. Francisco Franco, Nº 5, Marisol",
+    "freguesia":"Corroios",
+    "codPostal":"2855-155 CORROIOS",
+    "distrito":"Setúbal",
+    "concelho":"Seixal"
+  },
+  {
+    "nif":"510448933",
+    "name":"Windhover Aerosystems, Lda.",
+    "morada":"R. da Etar - Centro Empresarial Ipark, Zona Industrial de Oiã",
+    "freguesia":"Oiã",
+    "codPostal":"3770-059 OIÃ",
+    "distrito":"Aveiro",
+    "concelho":"Oliveira do Bairro"
+  },
+  {
+    "nif":"510449131",
+    "name":"Laboratoire Nuxe Portugal, Unipessoal Lda.",
+    "morada":"Av. da Boavista, 3265-5.2, Edf. Oceanvs",
+    "freguesia":"Porto",
+    "codPostal":"4100-137 PORTO",
+    "distrito":"Porto",
+    "concelho":"Porto"
+  },
+  {
+    "nif":"510449328",
+    "name":"Glamour das Pratas, Unipessoal, Lda.",
+    "morada":"R. da Liberdade, Nº 45",
+    "freguesia":"Tavira",
+    "codPostal":"8800-399 TAVIRA",
+    "distrito":"Faro",
+    "concelho":"Tavira"
+  },
+  {
+    "nif":"510449417",
+    "name":"José Leal Martins, Unipessoal Lda.",
+    "morada":"R. de S. Martinho, Monsarros",
+    "freguesia":"Monsarros",
+    "codPostal":"3780-563 VILA NOVA DE MONSARROS",
+    "distrito":"Aveiro",
+    "concelho":"Anadia"
+  },
+  {
+    "nif":"510449557",
+    "name":"Greendefender - Promoção de Empreendimentos Turísticos, Lda.",
+    "morada":"Lugar da Cavada, Caminho da Rochinha, Nº 7",
+    "freguesia":"Cavada",
+    "codPostal":"4910-583 CAMINHA",
+    "distrito":"Viana do Castelo",
+    "concelho":"Caminha"
+  },
+  {
+    "nif":"510450288",
+    "name":"Jasminespring Unipessoal Lda.",
+    "morada":"R. da Igreja - Edf. Aveiro Business Center, Nº 79, Sala 5, Nossa Senhora de Fátima",
+    "freguesia":"Mamodeiro",
+    "codPostal":"3810-744 AVEIRO",
+    "distrito":"Aveiro",
+    "concelho":"Aveiro"
+  },
+  {
+    "nif":"510451047",
+    "name":"Taberna da Helena, Unipessoal Lda.",
+    "morada":"Av. Aquilino Ribeiro",
+    "freguesia":"Carrazeda de Ansiães",
+    "codPostal":"5140-058 CARRAZEDA DE ANSIÃES",
+    "distrito":"Bragança",
+    "concelho":"Carrazeda de Ansiães"
+  },
+  {
+    "nif":"510451322",
+    "name":"Daniel Gomes - Representações, Unipessoal Lda.",
+    "morada":"R. Monte Afurado Nº 22",
+    "freguesia":"Marrancos",
+    "codPostal":"4730-280 MARRANCOS, VVD",
+    "distrito":"Braga",
+    "concelho":"Vila Verde"
+  },
+  {
+    "nif":"510452000",
+    "name":"Logic Scenery Lda.",
+    "morada":"Tv. D. Frei Luís Álvaro de Távora, Nº 207, 3º Esq.",
+    "freguesia":"Leça do Balio",
+    "codPostal":"4465-195 MATOSINHOS",
+    "distrito":"Porto",
+    "concelho":"Matosinhos"
+  },
+  {
+    "nif":"510452540",
+    "name":"Pétala Perfeita - Cuidados de Beleza Unipessoal Lda.",
+    "morada":"R. Filipe Ferrer, Lt., 7, Lj. 7",
+    "freguesia":"Faro",
+    "codPostal":"8005-334 FARO",
+    "distrito":"Faro",
+    "concelho":"Faro"
+  },
+  {
+    "nif":"510453074",
+    "name":"Serviprisma - Manutenção e Serviços, Lda.",
+    "morada":"Edifício Esteves, R. Soc. Musical, Nº 2, 2.º N, Santa Cecilia",
+    "freguesia":"Aveiro",
+    "codPostal":"3810-328 AVEIRO",
+    "distrito":"Aveiro",
+    "concelho":"Aveiro"
+  },
+  {
+    "nif":"510454186",
+    "name":"Father And Son Co, Lda.",
+    "morada":"Monte da Oliveirinha, S/N Nossa Senhora da Graça do Divor",
+    "freguesia":"Monte a Oliveirinha",
+    "codPostal":"7000-016 NOSSA SENHORA DA GRAÇA DO DIVOR",
+    "distrito":"Évora",
+    "concelho":"Évora"
+  },
+  {
+    "nif":"510454577",
+    "name":"Yolamais - Unipessoal, Lda.",
+    "morada":"Av. Luís de Camões, Edf. Infante, Nº 61, Bl. B 3º C",
+    "freguesia":"Funchal",
+    "codPostal":"9000-168 FUNCHAL",
+    "distrito":"Ilha da Madeira",
+    "concelho":"Funchal"
+  },
+  {
+    "nif":"510454810",
+    "name":"Rigorveloz Unipessoal Lda.",
+    "morada":"R. D. António Luis Pereira Coutinho 8 Vieira de Leiria",
+    "freguesia":"Vieira de Leiria",
+    "codPostal":"2430-775 VIEIRA DE LEIRIA",
+    "distrito":"Leiria",
+    "concelho":"Marinha Grande"
+  },
+  {
+    "nif":"510456014",
+    "name":"Colégio Espinheira Rio, Lda.",
+    "morada":"Lugar de Moranzel, Lt. 38",
+    "freguesia":"Torreira",
+    "codPostal":"3870-301 AVEIRO",
+    "distrito":"Aveiro",
+    "concelho":"Murtosa"
+  },
+  {
+    "nif":"510456154",
+    "name":"Pastelaria Paulo & Bruno, Lda.",
+    "morada":"R. João Augusto Ornelas, Edf. Villas da Igreja, Bl. B, Fracção J",
+    "freguesia":"Estreito Câmara de Lobos",
+    "codPostal":"9325-032 ESTREITO DE CÂMARA DE LOBOS",
+    "distrito":"Ilha da Madeira",
+    "concelho":"Câmara de Lobos"
+  },
+  {
+    "nif":"510456391",
+    "name":"Jardim dos Caracóis, Lda.",
+    "morada":"R. da Senhora da Graça, Nº 20-E, Quiaios",
+    "freguesia":"Quiaios",
+    "codPostal":"3080-557 FIGUEIRA DA FOZ",
+    "distrito":"Coimbra",
+    "concelho":"Figueira da Foz"
+  },
+  {
+    "nif":"510457045",
+    "name":"Amperjourney - Unipessoal Lda.",
+    "morada":"Av. da Boavista, 2806",
+    "freguesia":"Porto",
+    "codPostal":"4100-119 PORTO",
+    "distrito":"Porto",
+    "concelho":"Porto"
+  },
+  {
+    "nif":"510457380",
+    "name":"Confrades D'alma, Unipessoal Lda.",
+    "morada":"R. da Igreja, N.º 22",
+    "freguesia":"Brotas",
+    "codPostal":"7490-017 BROTAS",
+    "distrito":"Évora",
+    "concelho":"Mora"
+  },
+  {
+    "nif":"510457398",
+    "name":"Antunarqui Unipessoal Lda.",
+    "morada":"R. Júlio Diniz, Nº 33, Belsol, Foros de Amora",
+    "freguesia":"Foros de Amora",
+    "codPostal":"2845-296 AMORA",
+    "distrito":"Setúbal",
+    "concelho":"Seixal"
+  },
+  {
+    "nif":"510457525",
+    "name":"Normalégua Unipessoal Lda.",
+    "morada":"Av. Dr. Fernando Aroso, Nº 921",
+    "freguesia":"Matosinhos",
+    "codPostal":"4450-666 MATOSINHOS",
+    "distrito":"Porto",
+    "concelho":"Matosinhos"
+  },
+  {
+    "nif":"510458190",
+    "name":"Dumitru & Miguel, Lda.",
+    "morada":"Av. Afonso Henriques, A Fábrica R/C Lj. L",
+    "freguesia":"Portimão",
+    "codPostal":"8500-502 PORTIMÃO",
+    "distrito":"Faro",
+    "concelho":"Portimão"
+  },
+  {
+    "nif":"510458300",
+    "name":"Auto Jcmonteiro, Unipessoal Lda.",
+    "morada":"R. das Agras, Nº 54",
+    "freguesia":"Revinhade",
+    "codPostal":"4650-361 REVINHADE",
+    "distrito":"Porto",
+    "concelho":"Felgueiras"
+  },
+  {
+    "nif":"510458637",
+    "name":"Domus Cardílio - Gestão e Administração de Condomínios, Unipessoal Lda.",
+    "morada":"R. Joaquim Alexandre Inácio, Lt. 4, Lj. 11, R/C",
+    "freguesia":"Torres Novas",
+    "codPostal":"2350-458 TORRES NOVAS",
+    "distrito":"Santarém",
+    "concelho":"Torres Novas"
+  },
+  {
+    "nif":"510458815",
+    "name":"Fuschiafusion Lda.",
+    "morada":"R. Mendo Estevens, N.º 10",
+    "freguesia":"Évora",
+    "codPostal":"7000-865 EVORA",
+    "distrito":"Évora",
+    "concelho":"Évora"
+  },
+  {
+    "nif":"510459153",
+    "name":"Pra Comunicar, Unipessoal Lda.",
+    "morada":"Lg. Mendonça e Costa, Nº 14, 2º",
+    "freguesia":"Lisboa",
+    "codPostal":"1900-336 LISBOA",
+    "distrito":"Lisboa",
+    "concelho":"Lisboa"
+  },
+  {
+    "nif":"510459617",
+    "name":"Escalalatina Agropecuária Unipessoal Lda.",
+    "morada":"Bairro das Sortes - Parque de Feiras e Exposições",
+    "freguesia":"Mogadouro",
+    "codPostal":"5200-222 MOGADOURO",
+    "distrito":"Bragança",
+    "concelho":"Mogadouro"
+  },
+  {
+    "nif":"510460356",
+    "name":"Taxis Carlos Alberto Guerra & Filho, Lda.",
+    "morada":"Edifício Chafariz, Letra F - Santana - Sesimbra",
+    "freguesia":"Santana",
+    "codPostal":"2970-826 SESIMBRA",
+    "distrito":"Setúbal",
+    "concelho":"Sesimbra"
+  },
+  {
+    "nif":"510460429",
+    "name":"Lplog - Transportes, Unipessoal Lda.",
+    "morada":"R. Capela, S/N, Casal S. Brás",
+    "freguesia":"Casal São Brás",
+    "codPostal":"3240-213 ANSIÃO",
+    "distrito":"Leiria",
+    "concelho":"Ansião"
+  },
+  {
+    "nif":"510460550",
+    "name":"Domingos Agrela, Unipessoal Lda.",
+    "morada":"R. da Fazendinha, Nº 53",
+    "freguesia":"Estreito Calheta",
+    "codPostal":"9370-253 ESTREITO DA CALHETA",
+    "distrito":"Ilha da Madeira",
+    "concelho":"Calheta (Madeira)"
+  },
+  {
+    "nif":"510460720",
+    "name":"Patagonia Ocean - Sociedade Unipessoal Lda.",
+    "morada":"Lg. de Andaluz, 25, 2º",
+    "freguesia":"Lisboa",
+    "codPostal":"1050-004 LISBOA",
+    "distrito":"Lisboa",
+    "concelho":"Lisboa"
+  },
+  {
+    "nif":"510460739",
+    "name":"Alumitondela - Serviços de Caixilharia, Lda.",
+    "morada":"R. Principal do Alambique, S/N, Saldonas",
+    "freguesia":"Saldonas",
+    "codPostal":"3460-337 TONDELA",
+    "distrito":"Viseu",
+    "concelho":"Tondela"
+  },
+  {
+    "nif":"510460941",
+    "name":"Academia Valentim de Carvalho, Unipessoal Lda.",
+    "morada":"Av. da Boavista, Lj. 1142",
+    "freguesia":"Porto",
+    "codPostal":"4100-113 PORTO",
+    "distrito":"Porto",
+    "concelho":"Porto"
+  },
+  {
+    "nif":"510460950",
+    "name":"Entre, Lda.",
+    "morada":"R. Campo de Viriato, Nº 94",
+    "freguesia":"Viseu",
+    "codPostal":"3510-122 VISEU",
+    "distrito":"Viseu",
+    "concelho":"Viseu"
+  },
+  {
+    "nif":"510461352",
+    "name":"Recordazul - Lda.",
+    "morada":"Al. 1 de Março, Nº 34, 5º",
+    "freguesia":"Tomar",
+    "codPostal":"2300-431 TOMAR",
+    "distrito":"Santarém",
+    "concelho":"Tomar"
+  },
+  {
+    "nif":"510462642",
+    "name":"Rossivisótica, Lda.",
+    "morada":"Av. Alberto Sampaio, Nº18",
+    "freguesia":"Viseu",
+    "codPostal":"3510-027 VISEU",
+    "distrito":"Viseu",
+    "concelho":"Viseu"
+  },
+  {
+    "nif":"510463487",
+    "name":"Castelo dos Hamburgueres, Unipessoal Lda.",
+    "morada":"R. da Carreira, N.º 306",
+    "freguesia":"Funchal",
+    "codPostal":"9000-042 FUNCHAL",
+    "distrito":"Ilha da Madeira",
+    "concelho":"Funchal"
+  },
+  {
+    "nif":"510463525",
+    "name":"Velhas Paredes Padaria, Unipessoal Lda.",
+    "morada":"Lugar Paredes Velhas, S/N",
+    "freguesia":"Paredes Velhas",
+    "codPostal":"3670-049 CAMBRA",
+    "distrito":"Viseu",
+    "concelho":"Vouzela"
+  },
+  {
+    "nif":"510463606",
+    "name":"Caçador & Santos - Hortícolas, Lda.",
+    "morada":"R. Álvaro Marques Pereira, Nº 2",
+    "freguesia":"Valado dos Frades",
+    "codPostal":"2450-397 VALADO DOS FRADES",
+    "distrito":"Leiria",
+    "concelho":"Nazaré"
+  },
+  {
+    "nif":"510463703",
+    "name":"Nl - Consultoria Imobiliária, Lda.",
+    "morada":"Av. da Boavista 2427/29",
+    "freguesia":"Porto",
+    "codPostal":"4100-135 PORTO",
+    "distrito":"Porto",
+    "concelho":"Porto"
+  },
+  {
+    "nif":"510465374",
+    "name":"Terraços de Baco Unipessoal Lda.",
+    "morada":"Quinta dos Vales S/N",
+    "freguesia":"Quinta do Zimbro",
+    "codPostal":"5140-224 RIBALONGA",
+    "distrito":"Bragança",
+    "concelho":"Carrazeda de Ansiães"
+  },
+  {
+    "nif":"510466206",
+    "name":"Match Attack - Artist Management, Unipessoal Lda.",
+    "morada":"Lg. de St. Antoninho, Nº 3",
+    "freguesia":"Lisboa",
+    "codPostal":"1200-406 LISBOA",
+    "distrito":"Lisboa",
+    "concelho":"Lisboa"
+  },
+  {
+    "nif":"510466397",
+    "name":"Silvestre Soares, Unipessoal Lda.",
+    "morada":"R. do Souto, Nº 6",
+    "freguesia":"Boucinhas",
+    "codPostal":"4730-290 MÓS VVD",
+    "distrito":"Braga",
+    "concelho":"Vila Verde"
+  },
+  {
+    "nif":"510466591",
+    "name":"Ouse - Lingerie e Acessórios, Lda.",
+    "morada":"Av. Dr. Leonardo Coimbra, Edf. Milton, Lj. 1, R/C",
+    "freguesia":"Felgueiras",
+    "codPostal":"4610-105 MARGARIDE",
+    "distrito":"Porto",
+    "concelho":"Felgueiras"
+  },
+  {
+    "nif":"510466630",
+    "name":"Terceiravia - Transporte Terrestre de Mercadorias, Lda.",
+    "morada":"R. Dr. Sousa Meneses, Nº 15",
+    "freguesia":"Angra do Heroísmo",
+    "codPostal":"9700-194 ANGRA DO HEROÍSMO",
+    "distrito":"Ilha Terceira",
+    "concelho":"Angra do Heroísmo"
+  },
+  {
+    "nif":"510466940",
+    "name":"Gisela Reis, Sociedade Unipessoal Lda.",
+    "morada":"Monte do Arneirão, Almograve",
+    "freguesia":"Almograve",
+    "codPostal":"7630-017 LONGUEIRA/ALMOGRAVE",
+    "distrito":"Beja",
+    "concelho":"Odemira"
+  },
+  {
+    "nif":"510467296",
+    "name":"Eusébio Moura dos Santos, Unipessoal Lda.",
+    "morada":"Lugar de Vinhó",
+    "freguesia":"Vinhó",
+    "codPostal":"3305-286 VILA COVA DO ALVA",
+    "distrito":"Coimbra",
+    "concelho":"Arganil"
+  },
+  {
+    "nif":"510467547",
+    "name":"Nuno José da Rocha Carvalho, Unipessoal Lda.",
+    "morada":"R. do Castelo, N.º 5",
+    "freguesia":"Sanfins do Douro",
+    "codPostal":"5070-378 SANFINS DO DOURO (ALIJÓ)",
+    "distrito":"Vila Real",
+    "concelho":"Alijó"
+  },
+  {
+    "nif":"510467776",
+    "name":"Malpevent - Consultadoria e Produção de Eventos, Lda.",
+    "morada":"R. da Guiné Bissau, Nº 14, R/C Dto.",
+    "freguesia":"Aveiro",
+    "codPostal":"3800-018 AVEIRO",
+    "distrito":"Aveiro",
+    "concelho":"Aveiro"
+  },
+  {
+    "nif":"510467814",
+    "name":"Betafruit, Lda.",
+    "morada":"Lg. Francisco Peres, Monte Frio",
+    "freguesia":"Monte Frio",
+    "codPostal":"3305-036 BENFEITA",
+    "distrito":"Coimbra",
+    "concelho":"Arganil"
+  },
+  {
+    "nif":"510468020",
+    "name":"Mirtifruto - Produção e Comercialização de Mirtilos, Unipessoal Lda.",
+    "morada":"Estr. de Palmela, Nº 179",
+    "freguesia":"Setúbal",
+    "codPostal":"2900-536 SETÚBAL",
+    "distrito":"Setúbal",
+    "concelho":"Setúbal"
+  },
+  {
+    "nif":"510468497",
+    "name":"Henrique Sá, Sociedade Unipessoal Lda.",
+    "morada":"R. da Misericórdia, N.º 3",
+    "freguesia":"Oliveira de Frades",
+    "codPostal":"3680-094 OLIVEIRA DE FRADES",
+    "distrito":"Viseu",
+    "concelho":"Oliveira de Frades"
+  },
+  {
+    "nif":"510468632",
+    "name":"Liliana Oliveira, Unipessoal Lda.",
+    "morada":"Av. Dr. José Henriques Vareda, Nº 14, R/C, Lj. B, Edf. Parque Sol",
+    "freguesia":"Marinha Grande",
+    "codPostal":"2430-307 MARINHA GRANDE",
+    "distrito":"Leiria",
+    "concelho":"Marinha Grande"
+  },
+  {
+    "nif":"510468993",
+    "name":"Vitor Leandro, Unipessoal Lda.",
+    "morada":"Loteam. do Rosal Sul 2 - A Ourique",
+    "freguesia":"Ourique",
+    "codPostal":"7670-368 OURIQUE",
+    "distrito":"Beja",
+    "concelho":"Ourique"
+  },
+  {
+    "nif":"510469515",
+    "name":"Luis Duarte & Sara Siopa, Lda.",
+    "morada":"R. Principal, 28, Ribeira do Marete",
+    "freguesia":"Ribeira Marete",
+    "codPostal":"2460-775 VIMEIRO",
+    "distrito":"Leiria",
+    "concelho":"Alcobaça"
+  },
+  {
+    "nif":"510470351",
+    "name":"Jacinto, Ferreira & Reis, Lda.",
+    "morada":"R. das Flores, Nº 303",
+    "freguesia":"Atouguia",
+    "codPostal":"2490-055 ATOUGUIA",
+    "distrito":"Santarém",
+    "concelho":"Ourém"
+  }
+]
