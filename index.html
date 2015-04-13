@@ -313,28 +313,32 @@
 				}
 				return arr;
 			}
-			
+
+			var myArray = new Array();
+
 			(function() {
 				$.getJSON( 'novasempresas.json', {
 					format: "json"
 				})
 					.done(function( data ) {
-					$.each( data, function( i, item ) {
+					var empresas = generateRandom(0, data.length-1);
+					for(var i=0; i<empresas.length;i++){
 						var resto = i%10;
+						
 						$('.repeater').append('<div class="lista_home" itemscope itemtype="http://schema.org/Organization">'+
-											  '<h3 itemprop="name">'+item.name+'</h3>'+
+											  '<h3 itemprop="name">'+data[empresas[i]].name+'</h3>'+
 											  '<div class="row"><div class="col-sm-4 col-sm-push-8"></div>'+
 											  '<div class="col-sm-4 col-sm-pull-4">'+
-											  '<p><strong>NIF:</strong> <span itemprop="taxID">'+item.nif+'</span></p>'+
-											  '<p><strong>CAE:</strong> '+item.CAE+'</p>'+
-											  '<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><strong>Morada:</strong><br> <span itemprop="streetAddress">'+item.morada+' </span><br><span itemprop="postalCode"> '+item.codPostal+'</span></p>'+	
+											  '<p><strong>NIF:</strong> <span itemprop="taxID">'+data[empresas[i]].nif+'</span></p>'+
+											  '<p><strong>CAE:</strong> '+data[empresas[i]].CAE+'</p>'+
+											  '<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><strong>Morada:</strong><br> <span itemprop="streetAddress">'+data[empresas[i]].morada+' </span><br><span itemprop="postalCode"> '+data[empresas[i]].codPostal+'</span></p>'+	
 											  '</div><div class="col-sm-4 col-sm-pull-4">'+
 											  '<table class="tbl_dados"><tr>'+
-											  '<td><strong>Tel:</strong></td><td itemprop="telephone">'+item.Tel+'</td></tr><tr>'+
-											  '<td><strong>Fax:</strong></td><td itemprop="faxNumber">'+item.Fax+'</td></tr><tr>'+
-											  '<td><strong>GSM:</strong></td><td itemprop="telephone">'+item.GSM+'</td></tr><tr>'+
-											  '<td><strong>Email:</strong></td><td><a href="mailto:'+item.Email+'" itemprop="email">'+item.Email+'</a></td></tr><tr>'+
-											  '<td><strong>Web:</strong></td><td><a href="http://'+item.Web+'" itemprop="url">'+item.Web+'</a></td>'+
+											  '<td><strong>Tel:</strong></td><td itemprop="telephone">'+data[empresas[i]].Tel+'</td></tr><tr>'+
+											  '<td><strong>Fax:</strong></td><td itemprop="faxNumber">'+data[empresas[i]].Fax+'</td></tr><tr>'+
+											  '<td><strong>GSM:</strong></td><td itemprop="telephone">'+data[empresas[i]].GSM+'</td></tr><tr>'+
+											  '<td><strong>Email:</strong></td><td><a href="mailto:'+data[empresas[i]].Email+'" itemprop="email">'+data[empresas[i]].Email+'</a></td></tr><tr>'+
+											  '<td><strong>Web:</strong></td><td><a href="http://'+data[empresas[i]].Web+'" itemprop="url">'+data[empresas[i]].Web+'</a></td>'+
 											  '</tr></table></div></div></div>'+
 											  '<hr>');
 						//a cada 10 registos coloca um módulo de publicidade
@@ -345,10 +349,13 @@
 												  'data-ad-slot="5703974521" data-ad-format="auto"></ins><script>'+
 												  '(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>');
 						}
+					}
 
-					});
 				});
 			})();
+
+
+
 		</script>
 
 
