@@ -300,6 +300,16 @@ CONTEUDOS
 	padding: .3em 2em;
 }
 
+.btn_ver_mais{
+	padding: .3em 2em;
+	margin: 6em auto ;
+	display: inline-block;
+}
+
+.h3_links_home{
+	display: inline-block;
+}
+
 
 .tab-panel{
 	margin: 2em 0;
