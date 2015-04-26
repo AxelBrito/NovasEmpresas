@@ -116,45 +116,47 @@
 
 						<div class="row">
 							<div class="col-sm-4 col-sm-push-8">
-								<a href="actualizar.html"><img class="logo_placeholder" src="images/logo_placeholder.png"></a>
+								<!--								<a href="actualizar.html"><img class="logo_placeholder" src="images/logo_placeholder.png"></a>-->
+								<a href="actualizar.html" title="Clique aqui para colocar o seu logo e publicidade grátis!"><img src="images/logo_placeholder.png" ></a>
 							</div>
-							<div class="col-sm-4 col-sm-pull-4">
+							<div class="col-sm-4 col-sm-pull-4 no_padding_right">
 								<p><strong>NIF:</strong> 509200036</p>
 								<p><strong>CAE:</strong> 82990</p>
 								<p><strong>Morada:</strong><br> Urb. Quinta do Bravo, Lt. 58, 2º Esq., Paredes, Alenquer <br> 2890-168 ALCOCHETE</p>	
 
 							</div>
-							<div class="col-sm-4 col-sm-pull-4">
-								
-								<!-- mostra a tabela se o utilizador estiver loggado -->
-<!--
-								<table class="tbl_dados">
-									<tr>
-										<td><strong>Tel:</strong></td>
-										<td>212 867 435</td>
-									</tr>
-									<tr>
-										<td><strong>Fax:</strong></td>
-										<td>212 117 299</td>
-									</tr>
-									<tr>
-										<td><strong>GSM:</strong></td>
-										<td>912 117 299</td>
-									</tr>
-									<tr>
-										<td><strong>Email:</strong></td>
-										<td><a href="mailto:nome@mail.pt">geral@mail.pt</a></td>
-									</tr>
-									<tr>
-										<td><strong>Web:</strong></td>
-										<td><a href="http://www.novasempresas.com">www.novasempresas.com</a></td>
-									</tr>
-								</table>
--->
-								
-								<!-- se não mostra esta imagem -->
-								<a href="actualizar.html"><img src="images/bot_registo_gratis.png" width="250" height="121"></a>
+							<div class="col-sm-4 col-sm-pull-4  no_padding_left">
+								<div class="div_loggado">
+									<!-- mostra a tabela se o utilizador estiver loggado -->
 
+									<table class="tbl_dados">
+										<tr>
+											<td><strong>Tel:</strong></td>
+											<td>212 867 435</td>
+										</tr>
+										<tr>
+											<td><strong>Fax:</strong></td>
+											<td>212 117 299</td>
+										</tr>
+										<tr>
+											<td><strong>GSM:</strong></td>
+											<td>912 117 299</td>
+										</tr>
+										<tr>
+											<td><strong>Email:</strong></td>
+											<td><a href="mailto:nome@mail.pt">geral@mail.pt</a></td>
+										</tr>
+										<tr>
+											<td><strong>Web:</strong></td>
+											<td><a href="http://www.novasempresas.com">www.novasempresas.com</a></td>
+										</tr>
+									</table>
+
+								</div>
+								<div class="div_nao_loggado">
+									<!-- se não mostra esta imagem -->
+									<a href="actualizar.html"><img src="images/bot_registo_gratis.png" width="235" height="auto"></a>
+								</div>
 
 							</div>
 
@@ -162,7 +164,7 @@
 
 						</div>
 
-						<div role="tabpanel" class="tab-panel" ng-show="isUser">
+						<div role="tabpanel" class="tab-panel mapa">
 							<!-- Nav tabs -->
 							<ul class="nav nav-tabs" role="tablist">
 								<li role="presentation" class="active"><a data-target="#local" aria-controls="local" role="tab" data-toggle="tab">Localização</a> </li>
@@ -173,7 +175,6 @@
 							<!-- Tab panes -->
 							<div class="tab-content">
 								<div role="tabpanel" class="tab-pane active" id="local">
-
 									<h3>Setúbal - Alcochete - Alcochete</h3>
 									<div class="map-canvas">
 										<iframe
@@ -198,11 +199,8 @@
 
 						</div>
 
-
-						<p><a class="btn btn-default btn_voltar" href="index.html" >&laquo; Voltar</a></p>
-
-
 					</div>	
+					<p><a class="btn btn-default btn_voltar" href="index.html" >&laquo; Voltar</a></p>
 
 
 
@@ -261,74 +259,7 @@
 				<!-- COL DIR -->
 				<div class="col-md-4 ">
 
-					<div role="tabpanel">
-
-						<!-- Nav tabs -->
-						<ul class="nav nav-tabs" role="tablist">
-							<li role="presentation" class="active"><a href="#registo" aria-controls="registo" role="tab" data-toggle="tab">Registe-se</a></li>
-							<li role="presentation"><a href="#login" aria-controls="profile" role="tab" data-toggle="tab">Login</a></li>
-
-						</ul>
-
-						<!-- Tab panes -->
-						<div class="tab-content">
-							<div role="tabpanel" class="tab-pane active" id="registo">
-								<form name="frmRegisto" >
-									<div class="div_inputsRegisto">
-										<h2>Registe-se aqui</h2>
-										<div class="form-group">
-
-											<input type="text" class="form-control" id="registoNome" placeholder="Nome" required>
-										</div>
-										<div class="form-group">
-
-											<input type="email" class="form-control" id="registoEmail" placeholder="Email" required>
-										</div>
-										<div class="form-group">
-
-											<input type="password" class="form-control" id="registoPassw" placeholder="Password" required>
-										</div>
-
-										<button type="submit" class="btn btn-success">Registar</button>
-									</div>	
-									<!--SÓ MOSTRA QUANDO O USER ESTÁ REGISTADO-->
-									<div class="user_dados">
-										<h3>Olá</h3>
-										<p>{{MOSTRA O NOME}}</p>
-									</div>
-									<!--/SÓ MOSTRA QUANDO O USER ESTÁ REGISTADO-->
-								</form>
-							</div>
-							<div role="tabpanel" class="tab-pane" id="login">
-								<form name="frmLogin" >
-									<div class="div_inputsRegisto">
-										<h2>Login</h2>
-										<div class="form-group">
-
-											<input type="email" class="form-control" id="loginEmail" placeholder="Email" required>
-										</div>
-										<div class="form-group">
-
-											<input type="password" class="form-control" id="loginPassw" placeholder="Password" required>
-										</div>
-
-										<button type="submit" class="btn btn-success">Login</button>
-									</div>	
-									<!--SÓ MOSTRA QUANDO O USER ESTÁ Logged in-->
-									<div class="user_dados">
-										<h3>Olá, {{NOME }}</h3>
-										<p>Não é o {{NOME}}? Clique aqui</p><!-- Diminuir a font e colocar a vermelho -->
-										<p><button type="submit" class="btn btn-danger">Sair</button></p>
-									</div>
-									<!--/SÓ MOSTRA QUANDO O USER ESTÁ Logged in-->
-								</form>
-
-							</div>
-
-						</div>
-
-					</div>
-
+					<iframe class="iframe_login" src="http://novasempresas.com/2015/loginstatus.php" scrolling="no" border="0"></iframe>
 					<hr>
 
 					<div class="g_ads mrec_ads hidden-xs">
@@ -389,6 +320,20 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 
+		<script>
+			$( document ).ready(function() {
+				var loggado = localStorage.getItem('loginstatus');
+				console.log('loggado-> ' + loggado);
+				if(loggado ==1){
+					$('.div_loggado').show();
+					$('.div_nao_loggado').hide();
+				} else {
+					$('.div_loggado').hide();
+					$('.div_nao_loggado').show();
+				}
+				
+			});
+		</script>
 
 
 		<!--		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=onGoogleReady"></script>-->

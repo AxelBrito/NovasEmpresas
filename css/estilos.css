@@ -150,16 +150,16 @@ a:active{
 }
 /*GOOGLE SEARCh BAR*/
 button, input, optgroup, select, textarea {
-  margin: 0;
-  font: inherit;
-  color: inherit;
+	margin: 0;
+	font: inherit;
+	color: inherit;
 }
 
 .gsc-input-box,
 #gsc-iw-id1{
-  border: 1px solid #2E3192;
-  background: #fff;
-  height: 30px;
+	border: 1px solid #2E3192;
+	background: #fff;
+	height: 30px;
 }
 
 .gsc-selected-option,
@@ -172,8 +172,8 @@ button, input, optgroup, select, textarea {
 }
 
 .gsc-table-result, .gsc-thumbnail-inside, .gsc-url-top {
-   padding-left: 0px; 
-  padding-right: 8px;
+	padding-left: 0px; 
+	padding-right: 8px;
 }
 
 .gsc-table-result div {
@@ -201,9 +201,22 @@ button, input, optgroup, select, textarea {
 	font-size: 1em;
 }
 
+.iframe_login{
+	border: none;
+	padding: 0;
+	margin: 0;
+	height: 450px;
+	width: 100%;
+}
+
+
+
 @media screen and (max-width:767px){
 	body {
 		padding-top: 50px;
+	}
+	body.body_iframe{
+		padding-top: 0px;
 	}
 	.navbar {
 		position: fixed;
@@ -229,6 +242,8 @@ button, input, optgroup, select, textarea {
 		margin: 1em 0 0 0;
 	}
 }
+
+
 
 .btn-primary {
 	color: #fff;
@@ -318,9 +333,12 @@ CONTEUDOS
 	cursor: pointer;
 }
 
+
+
 .tab-content {
-	padding: .3em 1em; 
+	padding: .5em 1em; 
 	background: #fafafa;
+	min-height: 400px;
 }
 
 
@@ -351,7 +369,7 @@ hr.separador_pq{
 }
 
 .logo_placeholder{
-/*	background: #eee;*/
+	/*	background: #eee;*/
 	border: 1px solid #ddd;
 	display: block;
 	margin: 0 auto 1em;
@@ -379,5 +397,20 @@ hr.separador_pq{
 		line-height: 1.8em;
 	}
 
+}
+
+
+.div_loggado,
+.div_nao_loggado
+{
+	display: none;
+}
+
+.no_padding_right{
+	padding-right: 0px;
+}
+
+.no_padding_left{
+	padding-left: 0px;
 }
 
