@@ -18,6 +18,16 @@
 
 	</head>
 	<body >
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62681923-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 		<!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -33,7 +43,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand logo" href="index.html"></a>
+					<a class="navbar-brand logo" href="index.php"></a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 
@@ -51,7 +61,7 @@
 					<nav class="navbar-right visible-xs">
 
 						<ul class="nav navbar-nav navbar-right menu_top_mobile">
-							<li><a href="index.html">Home</a></li>
+							<li><a href="index.php">Home</a></li>
 							<li><a href="quem_somos.html">Quem Somos</a></li>
 							<li><a href="contactos.html">Contactos</a></li>
 							<li><a href="anuncie_aqui.html">Anuncie aqui</a></li>
@@ -70,7 +80,7 @@
 				<nav class="navbar-right hidden-xs">
 					<div class="container">
 						<ul class="nav navbar-nav navbar-right menu_top" ng-controller="NavCtrl">
-							<li><a href="index.html">Home</a></li>
+							<li><a href="index.php">Home</a></li>
 							<li><a href="quem_somos.html">Quem Somos</a></li>
 							<li><a href="contactos.html">Contactos</a></li>
 							<li><a href="anuncie_aqui.html">Anuncie aqui</a></li>
@@ -86,7 +96,7 @@
 					<!--Google Searchbar-->
 					<script>
 						(function() {
-							var cx = '003630368411002965525:xqj9t4jd0hs';
+							var cx = '014729195283550132711:ericcbwygck';
 							var gcse = document.createElement('script');
 							gcse.type = 'text/javascript';
 							gcse.async = true;
@@ -96,7 +106,7 @@
 							s.parentNode.insertBefore(gcse, s);
 						})();
 					</script>
-					<gcse:searchbox enableHistory="true" autoCompleteMaxCompletions="5" autoCompleteMatchType='any'	></gcse:searchbox>
+					<gcse:searchbox enableHistory="false" autoCompleteMaxCompletions="5" autoCompleteMatchType='any'	></gcse:searchbox>
 					<!--/Google SearchBar-->
 				</div>
 
@@ -108,7 +118,41 @@
 			<div class="row">
 				<!-- ZONA DE CONTEÚDOS-->
 
-				<div class="col-md-8">
+						<!-- COL DIR -->
+				<div class="col-md-4 col-md-push-8">
+
+					<iframe class="iframe_login" src="http://novasempresas.com/2015/loginstatus.php" scrolling="no" border="0"></iframe>
+					<hr>
+
+					<div class="g_ads mrec_ads hidden-xs">
+						<h1>OUR MREC</h1>
+					</div>
+					<hr>
+
+					<div class="g_ads mrec_ads hidden-xs_">
+						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- NovasEmpresas_300x250 -->
+						<ins class="adsbygoogle"
+							 style="display:inline-block;width:300px;height:250px"
+							 data-ad-client="ca-pub-0126643354725634"
+							 data-ad-slot="7320308526"></ins>
+						<script>
+							(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+
+					<hr>
+
+					<div class="g_ads mrec_ads hidden-xs">
+						<h1>OUR MREC</h1>
+					</div>
+
+
+
+
+				</div>
+				
+				<div class="col-md-8 col-md-pull-4">
 					<!-- Lista de empresas em destaque filtradas por mais visualizações e/ou mais recentes -->
 					<div class="lista_home_" >
 						<!--Google Results-->
@@ -171,143 +215,7 @@
 
 				<!-- /ZONA DE CONTEÚDOS-->
 
-				<!-- COL DIR -->
-				<div class="col-md-4 ">
-
-					<div role="tabpanel">
-
-						<!-- Nav tabs -->
-						<ul class="nav nav-tabs" role="tablist">
-							<li role="presentation" class="active"><a href="#registo" aria-controls="registo" role="tab" data-toggle="tab">Registe-se</a></li>
-							<li role="presentation"><a href="#login" aria-controls="profile" role="tab" data-toggle="tab">Login</a></li>
-
-						</ul>
-
-						<!-- Tab panes -->
-						<div class="tab-content">
-							<div role="tabpanel" class="tab-pane active" id="registo">
-								<form name="frmRegisto" method="POST" action="regist.php">
-								<?php
-								session_start();
-								if(!isset($_SESSION["name"]))
-								{
-								?>
-									<div class="div_inputsRegisto">
-										<h2>Registe-se aqui</h2>
-										<div class="form-group">
-
-											<input type="text" class="form-control" name="registoNome" placeholder="Nome" required>
-										</div>
-										<div class="form-group">
-
-											<input type="email" class="form-control" name="registoEmail" placeholder="Email" required>
-										</div>
-										<div class="form-group">
-
-											<input type="password" class="form-control" name="registoPassw" placeholder="Password" required>
-										</div>
-
-										<button type="submit" class="btn btn-success">Registar</button>
-									</div>	
-									<?php
-								}
-								else
-								{
-								?>
-									<!--SÓ MOSTRA QUANDO O USER ESTÁ REGISTADO-->
-									<div class="user_dados">
-										<h3>Olá</h3>
-										<?php
-										
-										echo ''.$_SESSION["name"].' , '.$_SESSION["email"].''
-										?>
-									</div>
-									<?php
-								}
-								?>
-									<!--/SÓ MOSTRA QUANDO O USER ESTÁ REGISTADO-->
-								</form>
-								<form action="exit.php">
-											<input type="submit" value="Sair"><br>
-										</form>
-							</div>
-							<div role="tabpanel" class="tab-pane" id="login">
-								<form name="frmLogin" method="POST" action="login.php">
-									<div class="div_inputsRegisto">
-									
-									<?php
-								
-								if(!isset($_SESSION["name"]))
-								{
-								?>
-										<h2>Login</h2>
-										<div class="form-group">
-
-											<input type="email" class="form-control" name="email"  placeholder="Email" required>
-										</div>
-										<div class="form-group">
-
-											<input type="password" class="form-control" name="pass"  placeholder="Password" required>
-										</div>
-
-										<button type="submit" class="btn btn-success">Registar</button>
-									</div>	
-									<?php
-								}
-								else
-								{
-								?>
-									<!--SÓ MOSTRA QUANDO O USER ESTÁ REGISTADO-->
-									<div class="user_dados">
-										<h3>Olá</h3>
-										<?php
-										
-										echo ''.$_SESSION["name"].' , '.$_SESSION["email"].''
-										?>
-									</div>
-									<?php
-								}
-								?>
-									<!--/SÓ MOSTRA QUANDO O USER ESTÁ REGISTADO-->
-								</form>
-								<form action="exit.php">
-											<input type="submit" value="Sair"><br>
-										</form>
-							</div>
-
-						</div>
-
-					</div>
-
-					<hr>
-
-					<div class="g_ads mrec_ads hidden-xs">
-						<h1>OUR MREC</h1>
-					</div>
-					<hr>
-
-					<div class="g_ads mrec_ads hidden-xs_">
-						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-						<!-- NovasEmpresas_300x250 -->
-						<ins class="adsbygoogle"
-							 style="display:inline-block;width:300px;height:250px"
-							 data-ad-client="ca-pub-0126643354725634"
-							 data-ad-slot="7320308526"></ins>
-						<script>
-							(adsbygoogle = window.adsbygoogle || []).push({});
-						</script>
-					</div>
-
-					<hr>
-
-					<div class="g_ads mrec_ads hidden-xs">
-						<h1>OUR MREC</h1>
-					</div>
-
-
-
-
-				</div>
+		
 			</div>
 		</div>
 
@@ -324,7 +232,7 @@
 						document.write(CopyrightLine);
 						</script> - NovasEmpresas.com | Todos os direitos reservados</p>
 					<ul class="nav navbar-nav navbar-right menu_footer hidden-xs" ng-controller="NavCtrl">
-						<li><a href="index.html">Home</a></li>
+						<li><a href="index.php">Home</a></li>
 						<li><a href="quem_somos.html">Quem Somos</a></li>
 						<li><a href="contactos.html">Contactos</a></li>
 						<li><a href="anuncie_aqui.html">Anuncie aqui</a></li>
@@ -365,8 +273,9 @@
 						var resto = i%10;
 						
 						$('.repeater').append('<div class="lista_home" itemscope itemtype="http://schema.org/Organization">'+
-											  '<h3 itemprop="name">'+data[empresas[i]].name+'</h3>'+
-											  '<div class="row"><div class="col-sm-4 col-sm-push-8"></div>'+
+											  '<a href="'+data[empresas[i]].url+'" title="'+data[empresas[i]].name+'"><h3 itemprop="name" class="h3_links_home">'+data[empresas[i]].name+'</h3></a>'+
+											  '<div class="row"><div class="col-sm-4 col-sm-push-8">'+
+											  '<a class="btn btn_ver_mais btn-default" href="'+data[empresas[i]].url+'" title="'+data[empresas[i]].name+'">Ver mais &raquo;</a></div>'+
 											  '<div class="col-sm-4 col-sm-pull-4">'+
 											  '<p><strong>NIF:</strong> <span itemprop="taxID">'+data[empresas[i]].nif+'</span></p>'+
 											  '<p><strong>CAE:</strong> '+data[empresas[i]].CAE+'</p>'+
@@ -392,7 +301,6 @@
 
 				});
 			})();
-
 
 
 		</script>

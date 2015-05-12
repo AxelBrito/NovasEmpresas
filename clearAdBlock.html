@@ -79,8 +79,9 @@
 				</nav>
 
 
-				<div class="frm_pesquisa col-md-8 col-md-push-2">
 
+				<div class="frm_pesquisa col-md-8 col-md-push-2">
+					<span class="tit_pesquisa">Pesquise qualquer Empresa por Nome, NIF, morada, telefone, etc.</span>
 					<!--Google Searchbar-->
 					<script>
 						(function() {
@@ -97,8 +98,8 @@
 					<gcse:searchbox enableHistory="false" autoCompleteMaxCompletions="5" autoCompleteMatchType='any'	></gcse:searchbox>
 					<!--/Google SearchBar-->
 				</div>
-				
-				
+
+
 			</div>
 		</div>
 
@@ -106,10 +107,11 @@
 			<div class="row">
 				<!-- ZONA DE CONTEÚDOS-->
 
-							<!-- COL DIR -->
+				<!-- COL DIR -->
 				<div class="col-md-4 col-md-push-8">
-				
+
 					<iframe class="iframe_login" src="http://novasempresas.com/2015/loginstatus.php" scrolling="no" border="0"></iframe>
+
 					<hr>
 
 					<div class="g_ads mrec_ads hidden-xs">
@@ -117,7 +119,7 @@
 					</div>
 					<hr>
 
-					<div class="g_ads mrec_ads hidden-xs_">
+					<div class="g_ads mrec_ads">
 						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 						<!-- NovasEmpresas_300x250 -->
 						<ins class="adsbygoogle"
@@ -131,33 +133,23 @@
 
 					<hr>
 
-					<div class="g_ads mrec_ads hidden-xs">
+					<div class="g_ads mrec_ads">
 						<h1>OUR MREC</h1>
 					</div>
+
 				</div>
-				
+
 				<div class="col-md-8 col-md-pull-4">
-					
+					<!-- Lista de empresas em destaque filtradas por mais visualizações e/ou mais recentes -->
 					<div class="lista_home_" >
 						<!--Google Results-->
 						<gcse:searchresults></gcse:searchresults>
 					</div>
-					
-					<div class="lista_home">
-						<h1>Como actualizar os seus dados</h1>
 
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-						<hr>
-					</div>
-					<div class="lista_home">
-						
-						<iframe height="1465" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none" src="http://www.novasempresas.com/machform/embed.php?id=1" title="<big><big>Informações do Contacto</big></big>"><a href="http://www.novasempresas.com/machform/view.php?id=1" title="<big><big>Informações do Contacto</big></big>"><big><big>Informações do Contacto</big></big></a></iframe>
-					
-						<hr>
-					</div>
-					
+					<div class="repeater"></div>
 
-					<div class="row_">
+
+					<div class="row">
 						<div class="g_ads inline_links">
 							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 							<!-- NovasEmpresas_Responsive -->
@@ -210,7 +202,7 @@
 
 				<!-- /ZONA DE CONTEÚDOS-->
 
-	
+
 			</div>
 		</div>
 
@@ -219,13 +211,13 @@
 			<nav class="">
 				<div class="container">
 					<p class="navbar-left text-muted"><script type="text/javascript">
-var CopyrightLine = "&copy; 2004-[[YEAR]]";
-y = new Date();
-year = y.getFullYear();
-re = new RegExp("\\[\\[YEAR\\]\\]");
-CopyrightLine = CopyrightLine.replace(re,year);
-document.write(CopyrightLine);
-</script> - NovasEmpresas.com | Todos os direitos reservados</p>
+						var CopyrightLine = "&copy; 2004-[[YEAR]]";
+						y = new Date();
+						year = y.getFullYear();
+						re = new RegExp("\\[\\[YEAR\\]\\]");
+						CopyrightLine = CopyrightLine.replace(re,year);
+						document.write(CopyrightLine);
+						</script> - NovasEmpresas.com | Todos os direitos reservados</p>
 					<ul class="nav navbar-nav navbar-right menu_footer hidden-xs" ng-controller="NavCtrl">
 						<li><a href="index.html">Home</a></li>
 						<li><a href="quem_somos.html">Quem Somos</a></li>
@@ -239,10 +231,88 @@ document.write(CopyrightLine);
 
 		</footer>
 
+		<script>var isAdBlockActive=true;</script>
+		<script src="js/ads.js"></script>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 
+		<script>
+			function generateRandom(min, max) {
+				var arr = [];
+				while(arr.length < 5){
+					var randNum = Math.floor(Math.random() * (max - min + 1)) + min,
+						found=false;
+					for(var i=0;i < arr.length; i++){
+						if(arr[i] == randNum){found=true;break}
+					}
+					if(!found)arr[arr.length] = randNum;
+				}
+				return arr;
+			}
 
+			var myArray = new Array();
+
+			(function() {
+				$.getJSON( 'novasempresas.json', {
+					format: "json"
+				})
+					.done(function( data ) {
+					var empresas = generateRandom(0, data.length-1);
+					for(var i=0; i<empresas.length;i++){
+						var resto = i%10;
+
+						$('.repeater').append('<div class="lista_home" itemscope itemtype="http://schema.org/Organization">'+
+											  '<a href="'+data[empresas[i]].url+'" title="'+data[empresas[i]].name+'"><h3 itemprop="name" class="h3_links_home">'+data[empresas[i]].name+'</h3></a>'+
+											  '<div class="row"><div class="col-sm-4 col-sm-push-8">'+
+											  '<a class="btn btn_ver_mais btn-default" href="'+data[empresas[i]].url+'" title="'+data[empresas[i]].name+'">Ver mais &raquo;</a></div>'+
+											  '<div class="col-sm-4 col-sm-pull-4">'+
+											  '<p><strong>NIF:</strong> <span itemprop="taxID">'+data[empresas[i]].nif+'</span></p>'+
+											  '<p><strong>CAE:</strong> '+data[empresas[i]].CAE+'</p>'+
+											  '<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><strong>Morada:</strong><br> <span itemprop="streetAddress">'+data[empresas[i]].morada+' </span><br><span itemprop="postalCode"> '+data[empresas[i]].codPostal+'</span></p>'+	
+											  '</div><div class="col-sm-4 col-sm-pull-4">'+
+											  '<table class="tbl_dados"><tr>'+
+											  '<td><strong>Tel:</strong></td><td itemprop="telephone">'+data[empresas[i]].Tel+'</td></tr><tr>'+
+											  '<td><strong>Fax:</strong></td><td itemprop="faxNumber">'+data[empresas[i]].Fax+'</td></tr><tr>'+
+											  '<td><strong>GSM:</strong></td><td itemprop="telephone">'+data[empresas[i]].GSM+'</td></tr><tr>'+
+											  '<td><strong>Email:</strong></td><td><a href="mailto:'+data[empresas[i]].Email+'" itemprop="email">'+data[empresas[i]].Email+'</a></td></tr><tr>'+
+											  '<td><strong>Web:</strong></td><td><a href="http://'+data[empresas[i]].Web+'" itemprop="url">'+data[empresas[i]].Web+'</a></td>'+
+											  '</tr></table></div></div></div>'+
+											  '<hr>');
+						//a cada 10 registos coloca um módulo de publicidade
+						if(resto === 0 && i>1){
+							$('.repeater').append('<div class="g_ads inline_links">'+
+												  '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"><\/script>'+
+												  '<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0126643354725634"'+
+												  'data-ad-slot="5703974521" data-ad-format="auto"></ins><script>'+
+												  '(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>');
+						}
+					}
+
+				});
+			})();
+
+
+		</script>
+
+
+
+		<script>
+			if (isAdBlockActive) { 
+				$('.g_ads.inline_links').html('<h1>MY ads</h1>')
+			}
+
+
+			window.onload = function() {
+				setTimeout(function() {
+					var ad = document.querySelector("ins.adsbygoogle");
+					if (ad && ad.innerHTML.replace(/\s/g, "").length == 0) {
+						console.log('bres--> '+ad.length);
+						ad.style.cssText = 'display:block !important';
+						ad.innerHTML = "You seem to blocking Google AdSense ads in your browser.";
+					}
+				}, 2000); 
+			}; 
+		</script>
 
 
 	</body>

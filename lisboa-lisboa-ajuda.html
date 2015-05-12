@@ -83,7 +83,7 @@
 					<!--Google Searchbar-->
 					<script>
 						(function() {
-							var cx = '003630368411002965525:xqj9t4jd0hs';
+							var cx = '014729195283550132711:ericcbwygck';
 							var gcse = document.createElement('script');
 							gcse.type = 'text/javascript';
 							gcse.async = true;
@@ -93,7 +93,7 @@
 							s.parentNode.insertBefore(gcse, s);
 						})();
 					</script>
-					<gcse:searchbox enableHistory="true" autoCompleteMaxCompletions="5" autoCompleteMatchType='any'	></gcse:searchbox>
+					<gcse:searchbox enableHistory="false" autoCompleteMaxCompletions="5" autoCompleteMatchType='any'	></gcse:searchbox>
 					<!--/Google SearchBar-->
 				</div>
 
@@ -105,8 +105,42 @@
 			<div class="row">
 				<!-- ZONA DE CONTEÚDOS-->
 
-				<div class="col-md-8">
-					
+				<!-- COL DIR -->
+				<div class="col-md-4 col-md-push-8">
+
+					<iframe class="iframe_login" src="http://novasempresas.com/2015/loginstatus.php" scrolling="no" border="0"></iframe>
+					<hr>
+
+					<div class="g_ads mrec_ads hidden-xs">
+						<h1>OUR MREC</h1>
+					</div>
+					<hr class="hidden-xs">
+
+					<div class="g_ads mrec_ads hidden-xs_">
+						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- NovasEmpresas_300x250 -->
+						<ins class="adsbygoogle"
+							 style="display:inline-block;width:300px;height:250px"
+							 data-ad-client="ca-pub-0126643354725634"
+							 data-ad-slot="7320308526"></ins>
+						<script>
+							(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+
+					<hr>
+
+					<div class="g_ads mrec_ads hidden-xs">
+						<h1>OUR MREC</h1>
+					</div>
+
+
+
+
+				</div>
+
+				<div class="col-md-8 col-md-pull-4">
+
 					<div class="lista_home_" >
 						<!--Google Results-->
 						<gcse:searchresults></gcse:searchresults>
@@ -192,39 +226,7 @@
 
 				<!-- /ZONA DE CONTEÚDOS-->
 
-				<!-- COL DIR -->
-				<div class="col-md-4 ">
 
-	<iframe class="iframe_login" src="http://novasempresas.com/2015/loginstatus.php" scrolling="no" border="0"></iframe>
-					<hr>
-
-					<div class="g_ads mrec_ads hidden-xs">
-						<h1>OUR MREC</h1>
-					</div>
-					<hr class="hidden-xs">
-
-					<div class="g_ads mrec_ads hidden-xs_">
-						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-						<!-- NovasEmpresas_300x250 -->
-						<ins class="adsbygoogle"
-							 style="display:inline-block;width:300px;height:250px"
-							 data-ad-client="ca-pub-0126643354725634"
-							 data-ad-slot="7320308526"></ins>
-						<script>
-							(adsbygoogle = window.adsbygoogle || []).push({});
-						</script>
-					</div>
-
-					<hr>
-
-					<div class="g_ads mrec_ads hidden-xs">
-						<h1>OUR MREC</h1>
-					</div>
-
-
-
-
-				</div>
 			</div>
 		</div>
 
@@ -257,7 +259,7 @@
 		<script src="js/bootstrap.min.js"></script>
 
 		<script>
-			
+
 
 			(function() {
 				$.getJSON( 'lisboa-lisboa-ajuda.json', {
@@ -266,7 +268,7 @@
 					.done(function( data ) {
 					$.each( data, function( i, item ) {
 						var resto = i%10;
-						
+
 						$('.repeater').append('<div class="lista_home" itemscope itemtype="http://schema.org/Organization">'+
 											  '<h4 itemprop="name">'+item.name+'</h4><p><strong>NIF:</strong> <span itemprop="taxID">'+item.nif+' </span><a class="btn_voltar"'+ 												      		  'href="'+item.url+'" itemprop="url" title="'+item.name+'">Ver mais &raquo;</a></p></div>'+
 											  '<hr class="separador_pq">');

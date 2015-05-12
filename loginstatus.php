@@ -72,13 +72,13 @@ else
 					<?php
 if(isset($_SESSION["name"]))
 {
-					?>
-					<form action="exit.php">
-						<input type="submit" class="btn btn-danger" value="Sair"><br>
-					</form>
-					<?php
+						?>
+						<form action="exit.php">
+							<input type="submit" class="btn btn-danger" value="Sair"><br>
+						</form>
+						<?php
 }
-					?>
+						?>
 				</div>
 				<div role="tabpanel" class="tab-pane" id="login">
 					<form name="frmLogin" method="POST" action="login.php">
@@ -101,13 +101,14 @@ if(!isset($_SESSION["name"]))
 
 							<button type="submit" class="btn btn-success">Login</button>
 						</div>	
-					</form>
+					
 						<?php
 }
 else
 {
 						?>
 						<!--SÓ MOSTRA QUANDO O USER ESTÁ logado-->
+						
 						<div class="user_dados">
 							<h3>Olá <?php echo ''.$_SESSION["name"].'';	?></h3>
 						</div>
@@ -115,6 +116,7 @@ else
 }
 						?>
 						<!--/SÓ MOSTRA QUANDO O USER ESTÁ logado-->
+						</form>
 						<?php
 if(isset($_SESSION["name"]))
 {
