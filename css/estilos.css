@@ -64,6 +64,17 @@ button{
 	color: #2E3192;
 }
 
+@media screen and (max-width:480px){
+	footer .container .text-muted {
+		margin: 10px 0;
+	}
+	.footer p.text-muted{
+		font-size: .8em;
+		color: #2E3192;
+		text-align: center;
+	}
+}
+
 .navbar-brand.logo{
 	background: url('http://www.novasempresas.com/2015/images/logo.svg') no-repeat left top;
 	background-size: 100%;
