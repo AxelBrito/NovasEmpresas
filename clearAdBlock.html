@@ -35,7 +35,6 @@
 					<a class="navbar-brand logo" href="index.html"></a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
-
 					<div class="g_ads lb_ads navbar-right hidden-sm hidden-xs">
 						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 						<!-- NovasEmpresasTop -->
@@ -47,6 +46,11 @@
 							(adsbygoogle = window.adsbygoogle || []).push({});
 						</script>
 					</div>
+
+					<div class="g_ads nossos_anuncios navbar-right hidden-sm hidden-xs">
+						<img src="images/ads/top_banner.gif">
+					</div>
+
 					<nav class="navbar-right visible-xs">
 
 						<ul class="nav navbar-nav navbar-right menu_top_mobile">
@@ -114,7 +118,7 @@
 
 					<hr>
 
-					<div class="g_ads mrec_ads hidden-xs">
+					<div class="g_ads mrec_ads hidden-xs nossos_anuncios" id="lateral_0">
 						<h1>OUR MREC</h1>
 					</div>
 					<hr>
@@ -133,8 +137,8 @@
 
 					<hr>
 
-					<div class="g_ads mrec_ads">
-						<h1>OUR MREC</h1>
+					<div class="g_ads mrec_ads nossos_anuncios" id="lateral_1">
+						<h1>Nossos anuncios</h1>
 					</div>
 
 				</div>
@@ -232,10 +236,10 @@
 		</footer>
 
 		<script>var isAdBlockActive=true;</script>
-		<script src="js/ads.js"></script>
+
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-
+		<script src="js/ads.min.js"></script>
 		<script>
 			function generateRandom(min, max) {
 				var arr = [];
@@ -249,8 +253,6 @@
 				}
 				return arr;
 			}
-
-			var myArray = new Array();
 
 			(function() {
 				$.getJSON( 'novasempresas.json', {
@@ -296,22 +298,91 @@
 
 
 
-		<script>
-			if (isAdBlockActive) { 
-				$('.g_ads.inline_links').html('<h1>MY ads</h1>')
+		<script>	
+
+			function randomAd(min, max) {
+				var arr = [];
+				while(arr.length < 6){
+					var randNum = Math.floor(Math.random() * (max - min + 1)) + min,
+						found=false;
+					for(var i=0;i < arr.length; i++){
+						if(arr[i] == randNum){found=true;break}
+					}
+					if(!found)arr[arr.length] = randNum;
+				}
+				return arr;
 			}
 
 
-			window.onload = function() {
-				setTimeout(function() {
-					var ad = document.querySelector("ins.adsbygoogle");
-					if (ad && ad.innerHTML.replace(/\s/g, "").length == 0) {
-						console.log('bres--> '+ad.length);
-						ad.style.cssText = 'display:block !important';
-						ad.innerHTML = "You seem to blocking Google AdSense ads in your browser.";
-					}
-				}, 2000); 
-			}; 
+			//			if (isAdBlockActive) { 
+			//				$('.g_ads').hide();
+			//				$('.nossos_anuncios').show();
+			//			}
+
+
+
+			if (isAdBlockActive) { 
+				console.log('isAdBlockActive');
+
+				$.getJSON( 'novasEmpresasAnuncios.json', {
+					format: "json"
+				})
+					.done(function( data ) {
+					setTimeout(function() {
+						console.log('ads total--> ' + data.length);
+						var ads = randomAd(0, data.length-1);
+						for(var i=0; i<ads.length;i++){
+							console.log('ads --> ' + data[ads[i]].img);
+
+							//								$('.nossos_anuncios.mrec_ads').html('<a href="'+data[ads[i]].url+'" title="'+data[ads[i]].name+'"><img src="'+data[ads[i]].img+'"></a>');
+
+
+
+							if(data[ads[i]].format == '300' ){
+								$( ".nossos_anuncios.mrec_ads" ).each(function( index ) {
+									var myIdString = $( this ).attr('id');
+									var myId = myIdString.charAt(8);
+
+									if(  myId == index ){
+										$('#lateral_'+index).html('<a href="'+data[ads[i]].url+'" title="'+data[ads[i]].name+'"><img src="'+data[ads[i]].img+'"></a>');
+										console.log('index-->' +$('#lateral_'+index).html());
+										
+									} 
+
+
+								});
+							}
+
+						}
+					}, 2000);
+
+					$('.g_ads').hide();
+					$('.nossos_anuncios').show();
+				});
+
+			}//.if AdBlock
+
+
+			//			window.onload = function() {
+			//				setTimeout(function() {
+			//					var ad = document.querySelector("ins.adsbygoogle");
+			//					if (ad && ad.innerHTML.replace(/\s/g, "").length == 0) {
+			//						console.log('bres--> '+ad.length);
+			//						ad.style.cssText = 'display:block !important';
+			//						ad.innerHTML = "You seem to blocking Google AdSense ads in your browser.";
+			//					}
+			//				}, 3000); 
+			//			}; 
+
+
+			$( document ).ready(function() {
+				var loggado = localStorage.getItem('loginstatus');		
+				if(loggado ==1){
+					$('.iframe_login').addClass('logado');
+				} else {
+					$('.iframe_login').removeClass('logado');	
+				}
+			});
 		</script>
 
 

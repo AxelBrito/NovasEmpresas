@@ -373,9 +373,11 @@
 				if(loggado ==1){
 					$('.div_loggado').show();
 					$('.div_nao_loggado').hide();
+					$('.iframe_login').addClass('logado');
 				} else {
 					$('.div_loggado').hide();
 					$('.div_nao_loggado').show();
+					$('.iframe_login').removeClass('logado');
 				}
 
 			});

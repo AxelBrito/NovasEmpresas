@@ -1,0 +1,37 @@
+[{	"id":"01",
+  "name":"Ad 468x60 - A",
+  "format":"468",
+  "img":"http://novasempresas.com/2015/images/anuncio_lista_a.gif",
+  "url":"http://www.sapo.pt"
+ },
+ {	"id":"02",
+  "name":"Ad 468x60 - B",
+  "format":"468",
+  "img":"http://novasempresas.com/2015/images/ads/anuncio_lista_b.gif",
+  "url":"http://lisbon-offices.com"
+ },
+ {	"id":"03",
+  "name":"Ad 728x90 - A",
+  "format":"728",
+  "img":"http://novasempresas.com/2015/images/anuncio_top_a.gif",
+  "url":"http://www.sapo.pt"
+ },
+ {	"id":"04",
+  "name":"Ad 728x90 - B",
+  "format":"728",
+  "img":"http://novasempresas.com/2015/images/anuncio_top_b.gif",
+  "url":"http://www.iol.pt"
+ },
+ {	"id":"05",
+  "name":"Ad 300x250 - A",
+  "format":"300",
+  "img":"http://novasempresas.com/2015/images/anuncio_lateral_a.gif",
+  "url":"http://www.advogadosportugal.com/"
+ },
+ {	"id":"06",
+  "name":"Ad 300x250 - B",
+  "format":"300",
+  "img":"http://novasempresas.com/2015/images/anuncio_lateral_b.gif",
+  "url":"http://alfamaterrace.com/"
+ }
+]

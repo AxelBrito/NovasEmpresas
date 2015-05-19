@@ -120,9 +120,14 @@
 				<div class="col-md-4 col-md-push-8">
 
 					<iframe class="iframe_login" src="http://novasempresas.com/2015/loginstatus.php" scrolling="no" border="0"></iframe>
+					
 					<hr>
+					<div class="g_ads mrec_ads hidden-xs">
+						<h1>OUR MREC</h1>
+					</div>
+					<hr class="hidden-xs">
 
-					<div class="g_ads_ mrec_ads_ hidden-xs_">
+					<div class="g_ads mrec_ads hidden-xs_">
 						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 						<!-- NovasEmpresas_300x250 -->
 						<ins class="adsbygoogle"
@@ -264,6 +269,15 @@
 
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-
+		<script>
+			$( document ).ready(function() {
+				var loggado = localStorage.getItem('loginstatus');		
+				if(loggado ==1){
+					$('.iframe_login').addClass('logado');
+				} else {
+					$('.iframe_login').removeClass('logado');	
+				}
+			});
+		</script>
 	</body>
 </html>

@@ -263,6 +263,15 @@
 
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-
+		<script>
+			$( document ).ready(function() {
+				var loggado = localStorage.getItem('loginstatus');		
+				if(loggado ==1){
+					$('.iframe_login').addClass('logado');
+				} else {
+					$('.iframe_login').removeClass('logado');	
+				}
+			});
+		</script>
 	</body>
 </html>

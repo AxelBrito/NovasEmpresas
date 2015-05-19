@@ -301,6 +301,16 @@
 				});
 			})();
 
+			
+			
+			$( document ).ready(function() {
+				var loggado = localStorage.getItem('loginstatus');		
+				if(loggado ==1){
+					$('.iframe_login').addClass('logado');
+				} else {
+					$('.iframe_login').removeClass('logado');	
+				}
+			});
 
 
 		</script>
