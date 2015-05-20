@@ -47,8 +47,8 @@
 						</script>
 					</div>
 
-					<div class="g_ads nossos_anuncios navbar-right hidden-sm hidden-xs">
-						<img src="images/ads/top_banner.gif">
+					<div class="g_ads lb_ads nossos_anuncios navbar-right hidden-sm hidden-xs" id="top_0">
+						<h1>Our ads with adblocker</h1>
 					</div>
 
 					<nav class="navbar-right visible-xs">
@@ -118,8 +118,8 @@
 
 					<hr>
 
-					<div class="g_ads mrec_ads hidden-xs nossos_anuncios" id="lateral_0">
-						<h1>OUR MREC</h1>
+					<div class=" mrec_ads hidden-xs" >
+						<h1>Always OUR MREC</h1>
 					</div>
 					<hr>
 
@@ -134,11 +134,16 @@
 							(adsbygoogle = window.adsbygoogle || []).push({});
 						</script>
 					</div>
+					<hr class="hr_g_ads">
 
+					<div class="g_ads mrec_ads nossos_anuncios" id="lateral_0">
+						<h1>Our ads with adblocker</h1>
+					</div>
+					
 					<hr>
 
-					<div class="g_ads mrec_ads nossos_anuncios" id="lateral_1">
-						<h1>Nossos anuncios</h1>
+					<div class="mrec_ads" >
+						<h1>Always OUR MREC</h1>
 					</div>
 
 				</div>
@@ -165,6 +170,10 @@
 							<script>
 								(adsbygoogle = window.adsbygoogle || []).push({});
 							</script>
+						</div>
+						
+						<div class="g_ads inline_links nossos_anuncios" id="listAd_0">
+							<h1>Nossos anuncios inline_links</h1>
 						</div>
 					</div>
 					<hr>
@@ -331,49 +340,73 @@
 					setTimeout(function() {
 						console.log('ads total--> ' + data.length);
 						var ads = randomAd(0, data.length-1);
+						var i=0;
 						for(var i=0; i<ads.length;i++){
+							//							console.log('i-----> ' +i);
 							console.log('ads --> ' + data[ads[i]].img);
+							
+							
+							
+							// ******* anuncios top *********
+							if(data[ads[i]].format == '728'){
+								$( ".nossos_anuncios.lb_ads" ).each(function( index ) {
+									var myIdString = $( this ).attr('id');
+									var myId = myIdString.charAt(4);
+									if(  myId == index &&  $('#top_'+index).hasClass('ocupado') != true){
+										$('#top_'+index).html('<a href="'+data[ads[i]].url+'" title="'+data[ads[i]].name+'"><img src="'+data[ads[i]].img+'"></a>');
 
-							//								$('.nossos_anuncios.mrec_ads').html('<a href="'+data[ads[i]].url+'" title="'+data[ads[i]].name+'"><img src="'+data[ads[i]].img+'"></a>');
+										$('#top_'+index).addClass('ocupado');	
+										return false;
+									} 
+								});
+							} // ./anuncios top  
+							
+							
+							
 
-
-
-							if(data[ads[i]].format == '300' ){
+							// ******* anuncios laterais *********
+							if(data[ads[i]].format == '300'){
 								$( ".nossos_anuncios.mrec_ads" ).each(function( index ) {
 									var myIdString = $( this ).attr('id');
 									var myId = myIdString.charAt(8);
-
-									if(  myId == index ){
+									if(  myId == index &&  $('#lateral_'+index).hasClass('ocupado') != true){
 										$('#lateral_'+index).html('<a href="'+data[ads[i]].url+'" title="'+data[ads[i]].name+'"><img src="'+data[ads[i]].img+'"></a>');
-										console.log('index-->' +$('#lateral_'+index).html());
-										
+
+										$('#lateral_'+index).addClass('ocupado');	
+										return false;
 									} 
-
-
 								});
-							}
+							} // ./anuncios laterais   
+							
+						
+								
+							// ******* anuncios inline_links *********
+							if(data[ads[i]].format == '468'){
+								$( ".nossos_anuncios.inline_links" ).each(function( index ) {
+									var myIdString = $( this ).attr('id');
+									var myId = myIdString.charAt(7);
+									if(  myId == index &&  $('#listAd_'+index).hasClass('ocupado') != true){
+										$('#listAd_'+index).html('<a href="'+data[ads[i]].url+'" title="'+data[ads[i]].name+'"><img src="'+data[ads[i]].img+'"></a>');
 
+										$('#listAd_'+index).addClass('ocupado');	
+										return false;
+									} 
+								});
+							} // ./anuncios inline_links  
+							
+							
 						}
 					}, 2000);
 
 					$('.g_ads').hide();
+					$('.hr_g_ads').hide();
 					$('.nossos_anuncios').show();
 				});
 
-			}//.if AdBlock
+			}//./if AdBlock
 
 
-			//			window.onload = function() {
-			//				setTimeout(function() {
-			//					var ad = document.querySelector("ins.adsbygoogle");
-			//					if (ad && ad.innerHTML.replace(/\s/g, "").length == 0) {
-			//						console.log('bres--> '+ad.length);
-			//						ad.style.cssText = 'display:block !important';
-			//						ad.innerHTML = "You seem to blocking Google AdSense ads in your browser.";
-			//					}
-			//				}, 3000); 
-			//			}; 
-
+			
 
 			$( document ).ready(function() {
 				var loggado = localStorage.getItem('loginstatus');		

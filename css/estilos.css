@@ -292,22 +292,37 @@ button, input, optgroup, select, textarea {
 	/*	float: left;*/
 }
 
-.g_ads.lb_ads,
-.g_ads.lb_ads a{
+.lb_ads{
 	width: 728px;
 	height: 90px;
+	background: #eee;
+	display: block;
+	margin: 5px auto;
+	box-sizing: border-box;
+	text-align: center;
 }
 
-.g_ads.mrec_ads{
+.mrec_ads{
 	width: 300px;
 	height: 250px;
+	background: #eee;
+	display: block;
+	margin: 5px auto;
+	box-sizing: border-box;
+	text-align: center;
 }
-.g_ads.inline_links{
+.inline_links{
 	margin: 2em 0;
 	/*	float: left;*/
+	height: 60px;
+	background: #eee;
+	display: block;
+	margin: 5px auto;
+	box-sizing: border-box;
+	text-align: center;
 }
 .nossos_anuncios{
-	display: none;
+/*	display: none;*/
 }
 
 /*************************
