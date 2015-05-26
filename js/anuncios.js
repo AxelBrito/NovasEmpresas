@@ -25,10 +25,6 @@ if (isAdBlockActive) {
 			var ads = randomAd(0, data.length-1);
 			var i=0;
 			for(var i=0; i<ads.length;i++){
-				//							console.log('i-----> ' +i);
-				console.log('ads --> ' + data[ads[i]].img);
-
-
 
 				// ******* anuncios top *********
 				if(data[ads[i]].format == '728'){
@@ -91,3 +87,38 @@ if (isAdBlockActive) {
 	$('.hr_g_ads').show();
 	$('.nossos_anuncios').hide();
 }
+
+// anuncios permanentes laterais
+
+
+
+$.getJSON( 'anunciosLateraisPermanentes.json', {
+	format: "json"
+})
+	.done(function( data ) {
+
+	console.log('ads total--> ' + data.length);
+	var ads = randomAd(0, data.length-1);
+	var i=0;
+	for(var i=0; i<ads.length;i++){
+
+
+		// ******* anuncios laterais *********
+		if(data[ads[i]].format == '300'){
+			$( ".nossos_anuncios_permanentes.mrec_ads" ).each(function( index ) {
+				var myIdString = $( this ).attr('id');
+				var myId = myIdString.charAt(13);
+				if(  myId == index &&  $('#lateral_perm_'+index).hasClass('ocupado') != true){
+					$('#lateral_perm_'+index).html('<a href="'+data[ads[i]].url+'" title="'+data[ads[i]].name+'"><img src="'+data[ads[i]].img+'"></a>');
+
+					$('#lateral_perm_'+index).addClass('ocupado');	
+					return false;
+				} 
+			});
+		} // ./anuncios laterais   
+
+	}
+
+
+
+});

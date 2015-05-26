@@ -1,0 +1,20 @@
+[
+ {	"id":"01",
+  "name":"Ad 300x250 - A",
+  "format":"300",
+  "img":"http://novasempresas.com/2015/images/anuncio_permanente_a.gif",
+  "url":"http://www.advogadosportugal.com/"
+ },
+ {	"id":"02",
+  "name":"Ad 300x250 - B",
+  "format":"300",
+  "img":"http://novasempresas.com/2015/images/anuncio_permanente_b.gif",
+  "url":"http://alfamaterrace.com/"
+ },
+ {	"id":"03",
+  "name":"Ad 300x250 - C",
+  "format":"300",
+  "img":"http://novasempresas.com/2015/images/anuncio_lateral_c.gif",
+  "url":"http://quartosamadora.com/"
+ }
+]
