@@ -41,8 +41,6 @@ if (isAdBlockActive) {
 				} // ./anuncios top  
 
 
-
-
 				// ******* anuncios laterais *********
 				if(data[ads[i]].format == '300'){
 					$( ".nossos_anuncios.mrec_ads" ).each(function( index ) {
@@ -90,6 +88,18 @@ if (isAdBlockActive) {
 
 // anuncios permanentes laterais
 
+function randomAdPerm(min, max) {
+	var arr = [];
+	while(arr.length < 3){
+		var randNum = Math.floor(Math.random() * (max - min + 1)) + min,
+			found=false;
+		for(var i=0;i < arr.length; i++){
+			if(arr[i] == randNum){found=true;break}
+		}
+		if(!found)arr[arr.length] = randNum;
+	}
+	return arr;
+}
 
 
 $.getJSON( 'anunciosLateraisPermanentes.json', {
@@ -98,7 +108,7 @@ $.getJSON( 'anunciosLateraisPermanentes.json', {
 	.done(function( data ) {
 
 	console.log('ads total--> ' + data.length);
-	var ads = randomAd(0, data.length-1);
+	var ads = randomAdPerm(0, data.length-1);
 	var i=0;
 	for(var i=0; i<ads.length;i++){
 
@@ -118,7 +128,5 @@ $.getJSON( 'anunciosLateraisPermanentes.json', {
 		} // ./anuncios laterais   
 
 	}
-
-
 
 });
