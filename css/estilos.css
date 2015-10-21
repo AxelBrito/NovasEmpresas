@@ -283,7 +283,7 @@ button, input, optgroup, select, textarea {
 
 .g_ads,
 .nossos_anuncios{
-	background: #eee;
+/*	background: #eee;*/
 	border: 0px solid #f70;
 	display: block;
 	margin: 5px auto;
@@ -314,8 +314,8 @@ button, input, optgroup, select, textarea {
 .inline_links{
 	margin: 2em 0;
 	/*	float: left;*/
-	height: 60px;
-	background: #eee;
+	min-height: 60px;
+/*	background: #eee;*/
 	display: block;
 	margin: 5px auto;
 	box-sizing: border-box;
@@ -407,6 +407,13 @@ CONTEUDOS
 
 hr.separador_pq{
 	margin: .1em 0;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 0px solid #eee;
 }
 
 .logo_placeholder{
