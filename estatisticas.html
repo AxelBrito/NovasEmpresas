@@ -1,0 +1,457 @@
+<!doctype html>
+<html class="no-js" >
+	<head>
+		<meta charset="utf-8">
+
+		<title>Novas Empresas | Estatísticas</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="title" content="Novas Empresas | Actualizar dados"/>
+		<meta name="Description" content="Novas Empresas | Actualizar dados"/>
+		<meta name="Keywords" content="contribuinte, empresas, contactos, nif, gestores, gerentes, administradores, vendas, resultados, capital, insolvências, fax, email, telefone, morada, cae"/>
+		<meta name="classification" content="empresas, contactos, nif, gestores, gerentes, administradores, vendas, resultados, capital, insolvências, fax, email, telefone, morada, cae"/>
+		<meta name="language" content="PT"/>
+		<meta name="DC.Language" scheme="RFC1766" content="Portuguese"/>
+		<meta name="VW96.objecttype" content="Database"/>
+		<meta http-equiv="Content-Type" content="text/html; ISO-8859-1"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="distribution" content="global"/>
+		<meta name="robots" content="index,follow"/>
+
+		<meta property="og:title" content="Novas Empresas - informação de empresas portuguesas" />
+		<meta property="og:url" content="http://www.novasempresas.com" />
+		<meta property="og:image" content="http://novasempresas.com/2015/images/logo.svg" />
+		<meta property="og:site_name" content="Novas Empresas - informação de empresas portuguesas" />
+		<meta property="og:description" content="Informação de empresas: contactos, nif, Acionistas, gestores, gerentes, administradores, vendas, resultados, capital, insolvências, fax, email, telefone, morada, cae" />
+		<meta property="og:type" content="company"/>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/estilos.min.css" >
+
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript">
+
+			google.load("visualization", "1", {packages:["corechart"]});
+			var url0 = 'https://docs.google.com/a/novasempresas.com/spreadsheet/tq?range=A1%3AB21&key=0AhYdbZBR_3JMdFZIY2FhN0dpa29mbkxjQkRGMnQxV2c&gid=0&headers=-1';
+
+			var url = 'https://docs.google.com/a/novasempresas.com/spreadsheet/tq?range=A1%3AB13&key=0AhYdbZBR_3JMdEZsejFvdWlfVjBhR25nT0RLdXo2TWc&gid=0&headers=-1';
+			var url2 = 'https://docs.google.com/a/novasempresas.com/spreadsheet/tq?range=A1%3AB13&key=0AhYdbZBR_3JMdEZsejFvdWlfVjBhR25nT0RLdXo2TWc&gid=0&headers=-1';
+			var chart;
+			var titulo = 'Novas Empresas Criadas em Todo o País';
+			var desde;
+			var ate;
+
+			function mudaGraf (novourl, area){
+				var query = new google.visualization.Query(novourl);
+				titulo = area;
+				// Send the query with a callback function.
+				query.send(handleQueryResponse);
+				//drawVisualization(novourl);
+			}
+
+			function drawVisualization() {
+
+				var query = new google.visualization.Query(url);
+
+				// Send the query with a callback function.
+				query.send(handleQueryResponse);
+			}
+
+			function handleQueryResponse(response) {
+				if (response.isError()) {
+					alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+					return;
+				}
+				var options = {
+					title: titulo,
+					titleTextStyle: {color:'#0f1146', fontName: 'Verdana', fontSize:17},
+					chartArea:{left:50,top:50,width:"455",height:"350"},
+					isStacked:true, 
+					focusTarget: 'datum',
+					colors: ['#000234','#2d3092','#6a70af','#a4a7cb', '#cbccdf', '#d3d4e2'],
+					animation:{duration: 1000, easing: 'out'},
+					tooltip: {textStyle: {color: '#000234'}, showColorCode: true}
+				};
+
+				var data = response.getDataTable();
+				chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+				google.visualization.events.addListener(chart, 'ready', function() { });
+				chart.draw(data, options);
+				$('.div_bot_result_nac').show();
+			}
+			/*PIE CHART on LOAD*/
+			function drawVisualizationPie() {
+
+				var query = new google.visualization.Query(url0);
+				var query2 = new google.visualization.Query(url2);
+
+				// Send the query with a callback function.
+				query.send(handleQueryResponsePie);
+				//query.send(handleQueryResponse);
+				query2.send(teste);
+
+			}
+
+			function teste(resp){
+				var data2 = resp.getDataTable();
+				// ler valores da c�lula A2 e A13 
+				desde = data2.getValue(0, 0);
+				ate = data2.getValue(11, 0);
+			}
+
+			function handleQueryResponsePie(response) {
+				if (response.isError()) {
+					alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+					return;
+				}
+				var options = {
+					title: 'Novas Empresas Criadas em Portugal nos últimos 12 Meses (desde ' + desde + ' até ' + ate + ')',
+					width:650,
+					titleTextStyle: {color:'#0f1146', fontName: 'Verdana', fontSize:17},
+					chartArea:{left:35,top:40, width:"650",height:"450"},
+					colors: ['#0f0f5f','#2e2e92','#35356e','#6262c9', '#7d7dc9', '#2c0c5c', '#47306a', '#4f268e', '#8459c6', '#9677c6', '#0b3258', '#2d4a66', '#225687', '#568dc3', '#739cc3', '#094853', '#275760', '#1b7180', '#4faec0', '#6db3c0'],
+					animation:{duration: 1000, easing: 'out'},
+					legend: {position: 'right', alignment: 'center', textStyle: {color:'#0f1146', fontName: 'Verdana', fontSize: 11}},
+					tooltip: {textStyle: {color: '#000234'}, showColorCode: true}
+				};
+
+				var data = response.getDataTable();
+
+
+
+				chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+				chart.draw(data, options);
+				$('.div_bot_result_nac').hide();
+			}
+			google.setOnLoadCallback(drawVisualization);
+
+
+		</script>
+
+	</head>
+	<body >
+		<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+		<nav class="navbar navbar_bres navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand logo" href="index.html"></a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+
+					<div class="g_ads lb_ads navbar-right hidden-sm hidden-xs">
+						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- NovasEmpresasTop -->
+						<ins class="adsbygoogle"
+							 style="display:inline-block;width:728px;height:90px"
+							 data-ad-client="ca-pub-0126643354725634"
+							 data-ad-slot="6244834929"></ins>
+						<script>
+							(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+
+					<div class="g_ads lb_ads nossos_anuncios navbar-right hidden-sm hidden-xs" id="top_0">
+						<h1>Our ads with adblocker</h1>
+					</div>
+					<nav class="navbar-right visible-xs">
+
+						<ul class="nav navbar-nav navbar-right menu_top_mobile">
+							<li><a href="http://novasempresas.com/2015/index.html">Home</a></li>
+							<li><a href="http://novasempresas.com/2015/estatisticas.html">Estatísticas</a></li>
+							<li><a href="http://novasempresas.com/2015/actualizar.html">Actualizar dados</a></li>
+							<li><a href="http://novasempresas.com/2015/anunciar_aqui.html">Anunciar aqui</a></li>									</ul>
+
+					</nav>
+
+				</div><!--/.navbar-collapse -->
+			</div>
+		</nav>
+
+
+		<div class="jumbotron">
+			<div class="container">
+				<nav class="navbar-right hidden-xs">
+					<div class="container">
+						<ul class="nav navbar-nav navbar-right menu_top" >
+							<li><a href="http://novasempresas.com/2015/index.html">Home</a></li>
+							<li><a href="http://novasempresas.com/2015/estatisticas.html">Estatísticas</a></li>
+							<li><a href="http://novasempresas.com/2015/actualizar.html">Actualizar dados</a></li>
+							<li><a href="http://novasempresas.com/2015/anunciar_aqui.html">Anunciar aqui</a></li>
+						</ul>
+					</div>
+				</nav>
+
+
+				<div class="frm_pesquisa col-md-8 col-md-push-2">
+
+					<!--Google Searchbar-->
+					<script>
+						(function() {
+							var cx = '014729195283550132711:ericcbwygck';
+							var gcse = document.createElement('script');
+							gcse.type = 'text/javascript';
+							gcse.async = true;
+							gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+								'//www.google.com/cse/cse.js?cx=' + cx;
+							var s = document.getElementsByTagName('script')[0];
+							s.parentNode.insertBefore(gcse, s);
+						})();
+					</script>
+					<gcse:searchbox enableHistory="false" autoCompleteMaxCompletions="5" autoCompleteMatchType='any'	></gcse:searchbox>
+					<!--/Google SearchBar-->
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<!-- ZONA DE CONTEÚDOS-->
+
+				<!-- COL DIR -->
+				<div class="col-md-4 col-md-push-8">
+
+					<iframe class="iframe_login" src="http://novasempresas.com/2015/loginstatus.php" scrolling="no" border="0"></iframe>
+					<hr>
+
+					<div class=" mrec_ads hidden-xs nossos_anuncios_permanentes" id="lateral_perm_0" >
+						<h1>Always OUR MREC</h1>
+					</div>
+					<hr>
+
+					<div class="g_ads mrec_ads hidden-xs_">
+						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- NovasEmpresas_300x250 -->
+						<ins class="adsbygoogle"
+							 style="display:inline-block;width:300px;height:250px"
+							 data-ad-client="ca-pub-0126643354725634"
+							 data-ad-slot="7320308526"></ins>
+						<script>
+							(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+					<hr class="hr_g_ads">
+
+					<div class="g_ads mrec_ads nossos_anuncios" id="lateral_0">
+						<h1>Our ads with adblocker</h1>
+					</div>
+
+					<hr>
+
+					<div class="mrec_ads nossos_anuncios_permanentes" id="lateral_perm_1">
+						<h1>Always OUR MREC</h1>
+					</div>
+				</div>
+
+				<div class="col-md-8 col-md-pull-4">
+
+					<div class="lista_home_" >
+						<!--Google Results-->
+						<gcse:searchresults></gcse:searchresults>
+					</div>
+
+
+					<div class="col-md-12">
+						<h1>Estatísticas</h1>
+
+						<div class="div_balao_seta_esq" id="balao"></div>
+
+						<div class="div_mapa_estatisticas">
+							<img id="mapaPortugal" src="images/mapa_estatisticas.gif" width="310" height="516" usemap="#Map">
+							<map name="Map">
+								<area id="S" onClick="mudaGraf('https://docs.google.com/a/novasempresas.com/spreadsheet/tq?range=A1%3AD13&key=0AhYdbZBR_3JMdHhHcm01Unk0SlZyR1dWVkJkV2FHUHc&gid=0&headers=-1','Novas Empresas Criadas na Zona Sul');" shape="poly" coords="123,407,122,440,106,475,143,471,166,473,186,483,220,464,213,431,254,378,232,324,212,302,195,311,167,298,165,317,147,314,135,335,155,339,169,363,157,380,157,404,143,405" >
+								<area id="L" shape="poly" coords="87,271,112,271,123,291,113,312,111,321,133,312,144,323,132,334,153,340,167,361,155,379,155,401,125,408,116,393,123,363,114,344,92,353,92,327,72,321,78,291" onClick="mudaGraf('https://docs.google.com/a/novasempresas.com/spreadsheet/tq?range=A1%3AC13&key=0AhYdbZBR_3JMdFVWVVRUQU5XTHQySDFMT2pPNV9BMmc&gid=0&headers=-1','Novas Empresas Criadas na Grande Lisboa');">
+								<area id="C" onClick="mudaGraf('https://docs.google.com/a/novasempresas.com/spreadsheet/tq?range=A1%3AF13&key=0AhYdbZBR_3JMdFVHNmpxeHdnNFFaOENSeWpaUXpOZVE&gid=0&headers=-1','Novas Empresas Criadas na Zona Centro');" shape="poly" coords="227,320,213,298,194,308,162,296,165,317,157,312,145,316,133,311,116,318,124,292,112,269,85,269,81,263,102,244,123,162,144,174,153,177,168,177,188,165,192,184,214,173,228,171,226,179,248,183,255,203,246,236,209,239,229,260,251,293,232,322,221,313" >
+								<area id="P" onClick="mudaGraf('https://docs.google.com/a/novasempresas.com/spreadsheet/tq?range=A1%3AC13&key=0AhYdbZBR_3JMdDhURGdGRFJfdHBPUDhBNUxGWXNYOUE&gid=0&headers=-1','Novas Empresas Criadas no Grande Porto');"  shape="poly" coords="121,161,153,174,159,159,156,140,164,127,172,127,172,116,163,109,186,101,182,83,167,80,133,80,121,73,135,112" >
+								<area id="N"  onClick="mudaGraf('https://docs.google.com/a/novasempresas.com/spreadsheet/tq?range=A1%3AG13&key=0AhYdbZBR_3JMdDdIQ3N6Z3F5UjFuZUhxc3Rna2dRWlE&gid=0&headers=-1','Novas Empresas Criadas na Zona Norte');" shape="poly" coords="158,176,191,163,197,178,220,169,230,169,232,178,253,182,260,158,259,129,253,112,263,107,300,64,291,51,279,53,273,28,233,26,231,36,207,37,185,32,170,42,167,34,170,15,148,10,117,37,128,75,162,78,180,81,189,99,173,109,176,125,165,129,162,142" >
+								<area id="CI" onClick="mudaGraf('https://docs.google.com/a/novasempresas.com/spreadsheet/tq?range=A1%3AB13&key=0AhYdbZBR_3JMdEZsejFvdWlfVjBhR25nT0RLdXo2TWc&gid=0&headers=-1','Novas Empresas Criadas em Todo o País');" shape="rect" coords="6,5,96,158" >
+							</map>
+						</div>
+
+						<hr>
+					</div>
+
+					<!-- Fim do mapa -->
+
+
+					<div class="col-md-12">
+						<!-- CHART -->
+						<div id="chart_div"></div>
+						<div class="div_bot_result_nac"><a onClick="drawVisualizationPie();">Ver Novas Empresas Criadas em Portugal nos útimos 12 Meses</a>
+						</div>
+					</div>
+
+
+					<div class="col-md-12">
+						<div class="g_ads inline_links">
+							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+							<!-- NovasEmpresas_Responsive -->
+							<ins class="adsbygoogle"
+								 style="display:block"
+								 data-ad-client="ca-pub-0126643354725634"
+								 data-ad-slot="5703974521"
+								 data-ad-format="auto"></ins>
+							<script>
+								(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
+						</div>
+						<div class="g_ads inline_links nossos_anuncios" id="listAd_0">
+							<h1>Nossos anuncios inline_links</h1>
+						</div>
+
+					</div>
+					<hr>
+					<div class="col-md-12">
+						<!-- LISTA DE DISTRITOS -->
+						<div class="col-md-12"><h3>Distritos</h3></div>
+						<div class="col-xs-6">
+							<ul class="ul_distritos">
+								<li><a href="aveiro.html">Aveiro</a></li>
+								<li><a href="beja.html">Beja</a></li>
+								<li><a href="braga.html">Braga</a></li>
+								<li><a href="braganca.html">Bragança</a></li>
+								<li><a href="castelo_branco.html">Castelo Branco</a></li>
+								<li><a href="coimbra.html">Coimbra</a></li>
+								<li><a href="evora.html">Évora</a></li>
+								<li><a href="faro.html">Faro</a></li>
+								<li><a href="guarda.html">Guarda</a></li>
+								<li><a href="leiria.html">Leiria</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-6">
+							<ul class="ul_distritos">
+								<li><a href="lisboa.html">Lisboa</a></li>
+								<li><a href="portalegre.html">Portalegre</a></li>
+								<li><a href="castelo_branco.html">Porto</a></li>
+								<li><a href="santarem.html">Santarém</a></li>
+								<li><a href="setubal.html">Setúbal</a></li>
+								<li><a href="viana_do_castelo.html">Viana do Castelo</a></li>
+								<li><a href="vila_real.html">Vila Real</a></li>
+								<li><a href="viseu.html">Viseu</a></li>
+								<li><a href="acores.html">Açores</a></li>
+								<li><a href="madeira.html">Madeira</a></li>
+							</ul>
+						</div>
+					</div>
+
+
+				</div>
+
+				<!-- /ZONA DE CONTEÚDOS-->
+
+
+			</div>
+		</div>
+
+		<footer class="footer">
+
+			<nav class="">
+				<div class="container">
+					<p class="navbar-left text-muted"><script type="text/javascript">
+						var CopyrightLine = "&copy; 2004-[[YEAR]]";
+						y = new Date();
+						year = y.getFullYear();
+						re = new RegExp("\\[\\[YEAR\\]\\]");
+						CopyrightLine = CopyrightLine.replace(re,year);
+						document.write(CopyrightLine);
+						</script> - NovasEmpresas.com | Todos os direitos reservados</p>
+					<ul class="nav navbar-nav navbar-right menu_footer hidden-xs">
+						<li><a href="http://novasempresas.com/2015/index.html">Home</a></li>
+						<li><a href="http://novasempresas.com/2015/estatisticas.html">Estatísticas</a></li>
+						<li><a href="http://novasempresas.com/2015/actualizar.html">Actualizar dados</a></li>
+						<li><a href="http://novasempresas.com/2015/anunciar_aqui.html">Anunciar aqui</a></li>
+					</ul>
+				</div>
+			</nav>
+
+
+		</footer>
+
+		<script>var isAdBlockActive=true;</script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/ads.min.js"></script>
+		<script src="js/anuncios.js"></script>
+
+		<script>
+			$( document ).ready(function() {
+				var loggado = localStorage.getItem('loginstatus');		
+				if(loggado ==1){
+					$('.iframe_login').addClass('logado');
+				} else {
+					$('.iframe_login').removeClass('logado');	
+				}
+
+				// Mapa + Balão
+				// *******************************
+
+				$.ajax({
+					type:"GET",
+					url:'xml/distritos.xml',
+					dataType:"xml",
+					success: escreveXML
+				});
+
+				function escreveXML(data){
+					$(data).find("area").each(function(){
+						var id = $(this).attr("id");
+						var header = $(this).attr("header");
+						var tit = $(this).attr("titulo");
+
+
+						$('#'+id).mouseover(function(e){
+							$('#balao').html('<strong>'+header+' - distritos de</strong><br>'+ tit +'<br>clique para ver os dados');
+							var x = e.clientX,
+								y = e.clientY;
+							$('#balao').css('top', y-100).css('left', x+11);
+							$("#balao").show();
+						});
+
+
+						$('#'+id).mouseout(function(){
+							$("#balao").hide();
+						});
+						$('#'+id).mousemove(function(e){
+							var x = e.clientX,
+								y = e.clientY;
+							$('#balao').css('top', y-100).css('left', x+11);
+						});
+
+					});
+
+				}// fim do ESCREVE XML 
+				//CONTINENTE e ILHAS
+				$('#CI').mouseover(function(e){
+					$('#balao').html('<strong>Continente e Ilhas</strong><br>Todos os distritos em Portugal incluindo Madeira e Açores<br>clique para ver os dados');
+					var x = e.clientX,
+						y = e.clientY;
+					$('#balao').css('top', y-100).css('left', x+11);
+					$("#balao").show();
+				});
+
+				$('#CI').mouseout(function(){
+					$("#balao").hide();
+				});
+				$('#CI').mousemove(function(e){
+					var x = e.clientX,
+						y = e.clientY;
+					$('#balao').css('top', y-100).css('left', x+11);
+				});
+
+			});
+
+		</script>
+	</body>
+</html>

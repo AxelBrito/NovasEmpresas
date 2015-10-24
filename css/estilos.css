@@ -125,7 +125,7 @@ button{
 .menu_top li.active a,
 .nav.menu_footer a:hover,
 .menu_footer li.active a{
-	color: #8c90c2;
+	color: #2e3192;
 	background-color: transparent;
 }
 
@@ -283,7 +283,7 @@ button, input, optgroup, select, textarea {
 
 .g_ads,
 .nossos_anuncios{
-/*	background: #eee;*/
+	/*	background: #eee;*/
 	border: 0px solid #f70;
 	display: block;
 	margin: 5px auto;
@@ -315,7 +315,7 @@ button, input, optgroup, select, textarea {
 	margin: 2em 0;
 	/*	float: left;*/
 	min-height: 60px;
-/*	background: #eee;*/
+	/*	background: #eee;*/
 	display: block;
 	margin: 5px auto;
 	box-sizing: border-box;
@@ -410,10 +410,10 @@ hr.separador_pq{
 }
 
 hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 0px solid #eee;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+	border-top: 0px solid #eee;
 }
 
 .logo_placeholder{
@@ -461,4 +461,97 @@ hr {
 .no_padding_left{
 	padding-left: 0px;
 }
+
+
+
+
+/*ESTATISTICAS*/
+
+.div_mapa_estatisticas {
+	outline: -webkit-focus-ring-color auto 0px;
+	text-align: center;
+}
+
+.div_mapa_estatisticas img{
+	border: 1x solid #f70;
+}
+
+.div_mapa_estatisticas area:focus,
+.div_mapa_estatisticas area:active
+{
+	outline: -webkit-focus-ring-color auto 5px
+}
+/*BALOES*/
+.div_balao_seta_esq h1, .div_balao_seta_dir h1 {
+	font-size:16px;
+	color:#1d4a64;
+	font-weight:bold;
+	margin-bottom:5px;	
+}
+.div_balao_seta_esq strong, .div_balao_seta_dir strong { font-weight:bold;}	
+.div_balao_seta_esq {
+	font-size:12px;
+	color:#1d4a64;
+	background:url(../images/balao_seta_esq.png) no-repeat top left;
+	width:159px;
+	height:115px;
+	text-align:center;
+	padding:8px 5px 0 0;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	line-height:15px;
+	display:none;
+	border: 0px solid #000;
+	z-index:201;
+}
+.div_balao_seta_dir {
+	font-size:12px;
+	color:#1d4a64;
+	background:url(../images/balao_seta_dir.png) no-repeat top left;
+	width:159px;
+	height:115px;
+	text-align:center;
+	padding:8px 5px 0 0;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	line-height:15px;
+	display:none;
+	z-index:200;
+
+}
+#balao {	
+	position:fixed;
+	padding:5px 15px 0 7px;
+	line-height:13px;
+	font-size:10px;
+}	
+#balao_lisboa {	
+	position:fixed;
+}
+#balao_porto {	
+	position:fixed;
+}
+#balao_norte {	
+	position:fixed;
+}
+#balao_centro {	
+	position:fixed;
+}
+#balao_sul {	
+	position:fixed;
+}
+#chart_div {
+	min-height:516px;
+	width: 100%;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+
+
+.div_bot_result_nac {
+	display:none;
+	margin: 0 0 25px 0;
+}
+
 

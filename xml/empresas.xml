@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<empresas>
+	<area id="L" date_start="11-06-2012" date_end="17-06-2012" count="154"  />
+	<area id="P" date_start="11-06-2012" date_end="17-06-2012" count="96"  />
+	<area id="N" date_start="11-06-2012" date_end="17-06-2012" count="65"  />
+	<area id="C" date_start="11-06-2012" date_end="17-06-2012" count="42"  />
+	<area id="S" date_start="11-06-2012" date_end="17-06-2012" count="39"  /> 
+</empresas>
+

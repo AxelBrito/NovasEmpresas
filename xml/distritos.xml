@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<distritos>
+	<area id="N" header="Zona Norte" titulo="Braga, Viseu, Viana do Castelo, Vila Real, Guarda e Bragança" />
+	<area id="P" header="Grande Porto" titulo="Porto e Aveiro" />
+	<area id="S" header="Zona Sul" titulo="Faro, Beja e Évora" />
+	<area id="C" header="Zona Centro" titulo="Leiria, Santarém, Coimbra, Castelo Branco e Portalegre" />
+	<area id="L" header="Grande Lisboa" titulo="Lisboa e Setúbal" />
+
+</distritos>
