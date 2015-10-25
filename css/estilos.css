@@ -317,7 +317,6 @@ button, input, optgroup, select, textarea {
 	min-height: 60px;
 	/*	background: #eee;*/
 	display: block;
-	margin: 5px auto;
 	box-sizing: border-box;
 	text-align: center;
 }
@@ -547,11 +546,21 @@ hr {
 	overflow-y: hidden;
 }
 
-
-
 .div_bot_result_nac {
 	display:none;
 	margin: 0 0 25px 0;
+	text-align: center;
 }
+
+.div_bot_result_nac a{
+	cursor: pointer;
+	font-size: 18px;
+}
+
+.div_bot_result_nac a:hover{
+	color: #2e358f;
+	text-decoration: none;
+}
+
 
 
