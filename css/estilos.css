@@ -634,8 +634,9 @@ $pad: 20px;
 	text-decoration: none;
 }
 
-
-
+.map-canvas {
+	margin: 2em 0;
+}
 
 
 
